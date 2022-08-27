@@ -1,16 +1,12 @@
 import Header from './components/core/Header';
+import Main from './components/Main';
 import Footer from './components/core/Footer';
-import CVForm from './components/CVForm/CVForm';
-import CVPreview from './components/CVPreview/CVPreview';
 
 function App() {
   return (
     <>
       <Header />
-      <main className="main">
-        <CVForm />
-        <CVPreview />
-      </main>
+      <Main />
       <Footer />
     </>
   );

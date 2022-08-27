@@ -1,7 +1,9 @@
-export default function CVForm() {
+import General from './General';
+
+export default function CVForm(props) {
   return (
     <section className="cv-form">
-      <h1>CV FORM</h1>
+      <General handleOnChange={props.handleOnChange} formData={props.formData} />
     </section>
   );
 }
