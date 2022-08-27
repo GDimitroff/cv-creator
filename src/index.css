@@ -21,7 +21,10 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem;
-  background-color: #f3f4f6;
+  height: 70px;
+  background-color: #e5e7eb;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .header--logo {
@@ -57,9 +60,33 @@ body {
 
 .btn:hover,
 .btn:active {
-  background: #e5e7eb;
+  background: #d1d5db;
 }
 
 .btn-toggle-preview {
   display: none;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  gap: 18px;
+}
+
+.cv-form,
+.cv-preview {
+  flex-basis: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 1rem;
+}
+
+.cv-form {
+  background-color: #fff;
+}
+
+.cv-preview {
+  background-color: #f3f4f6;
+  min-height: calc(100vh - 70px - 4rem);
 }
