@@ -1,8 +1,14 @@
+import Header from './components/core/Header';
+
 function App() {
   return (
-    <div className="App">
-      <h1>App working!</h1>
-    </div>
+    <>
+      <Header />
+      <main className="main">
+        <section className="cv-builder"></section>
+        <section className="preview"></section>
+      </main>
+    </>
   );
 }
 
