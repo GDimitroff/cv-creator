@@ -1,4 +1,5 @@
 import Header from './components/core/Header';
+import Footer from './components/core/Footer';
 import CVForm from './components/CVForm/CVForm';
 import CVPreview from './components/CVPreview/CVPreview';
 
@@ -10,6 +11,7 @@ function App() {
         <CVForm />
         <CVPreview />
       </main>
+      <Footer />
     </>
   );
 }
