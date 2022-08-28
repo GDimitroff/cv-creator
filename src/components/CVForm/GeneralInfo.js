@@ -62,14 +62,14 @@ export default function GeneralInfo(props) {
 }
 
 const FormWrapper = styled.div`
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
   form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
   }
 `;

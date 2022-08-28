@@ -21,5 +21,4 @@ const CVFormWrapper = styled.section`
   flex-basis: 35%;
   background-color: ${({ theme }) => theme.colors['light-100']};
   padding: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;

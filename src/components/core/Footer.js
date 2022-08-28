@@ -31,6 +31,6 @@ const FooterWrapper = styled.footer`
 
   a:active,
   a:hover {
-    color: ${({ theme }) => theme.colors['dark-200']};
+    color: ${({ theme }) => theme.colors['light-300']};
   }
 `;

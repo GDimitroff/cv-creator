@@ -1,13 +1,15 @@
 const exampleCV = {
   generalInfo: {
     firstName: 'John',
-    lastName: 'Doe',
-    title: 'Senior Web Developer',
+    lastName: 'Smith',
+    title: 'Fullstack Developer',
     address: 'Example Street 10',
-    phoneNumber: '123456789',
-    email: 'john.doe@gmail.com',
+    phoneNumber: '+000 123456789',
+    email: 'youremail@email.com',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus imperdiet nisl sed vestibulum. Donec gravida, nulla eget blandit fermentum, mauris nisi rutrum libero, ac pharetra erat est sit amet tellus. Quisque fermentum dolor a interdum fermentum. Maecenas vehicula ac ipsum nec gravida. Integer quis porta turpis. Aenean et metus.',
+    linkedIn: 'LinkedIn.com/username',
+    facebook: 'Facebook.com/username',
   },
   experience: [
     {
@@ -57,12 +59,12 @@ const exampleCV = {
       to: '2008',
     },
     {
-      universityName: 'University name',
-      city: 'City name',
-      degree: '',
-      subject: '',
-      from: 'From',
-      to: 'To',
+      universityName: 'Massachusetts Institute of Technology',
+      city: 'Massachusetts',
+      degree: 'Master',
+      subject: 'Computer Science',
+      from: '2000',
+      to: '2004',
     },
   ],
 };
