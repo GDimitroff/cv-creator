@@ -1,9 +1,17 @@
-import General from './General';
+import { useContext } from 'react';
 
-export default function CVForm(props) {
+import CVContext from '../../store/cv-context';
+import GeneralInfo from './GeneralInfo';
+
+export default function CVForm() {
+  const ctx = useContext(CVContext);
+
   return (
     <section className="cv-form">
-      <General handleOnChange={props.handleOnChange} formData={props.formData} />
+      <GeneralInfo
+        handleChange={ctx.handleGeneralInfoChange}
+        generalInfo={ctx.cv.generalInfo}
+      />
     </section>
   );
 }
