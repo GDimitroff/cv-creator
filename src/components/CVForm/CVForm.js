@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import CVContext from '../../store/cv-context';
+import CVContext from '../../contexts/cv-context';
 import GeneralInfo from './GeneralInfo';
 
 export default function CVForm() {

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import CVContext from '../../store/cv-context';
+import CVContext from '../../contexts/cv-context';
 
 export default function CVPreview() {
   const ctx = useContext(CVContext);
@@ -34,9 +34,11 @@ export default function CVPreview() {
       <main className="cv-preview--main">
         <div className="main-left"></div>
         <div className="main-right">
-          <div className="cv-preview--photo">
-            <img src={generalInfo.photoURL} alt="Personal" />
+          <div className="panel">
+            <h1>Profile</h1>
+            <p>{generalInfo.description}</p>
           </div>
+          <hr />
         </div>
       </main>
     </section>

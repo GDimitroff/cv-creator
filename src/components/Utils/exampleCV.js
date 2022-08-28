@@ -3,7 +3,6 @@ const exampleCV = {
     firstName: 'John',
     lastName: 'Doe',
     title: 'Senior Web Developer',
-    photoURL: 'https://1x.com/assets/img/pro08.jpg',
     address: 'Example Street 10',
     phoneNumber: '123456789',
     email: 'john.doe@gmail.com',

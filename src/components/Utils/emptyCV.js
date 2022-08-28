@@ -3,7 +3,6 @@ const emptyCV = {
     firstName: '',
     lastName: '',
     title: '',
-    photoURL: '',
     address: '',
     phoneNumber: '',
     email: '',

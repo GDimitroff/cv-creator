@@ -26,13 +26,6 @@ export default function GeneralInfo(props) {
         />
         <input
           type="text"
-          name="photoURL"
-          placeholder="Photo URL"
-          value={props.generalInfo.photoURL}
-          onChange={props.handleChange}
-        />
-        <input
-          type="text"
           name="address"
           placeholder="Address"
           value={props.generalInfo.address}
