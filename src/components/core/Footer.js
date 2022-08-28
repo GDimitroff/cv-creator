@@ -21,7 +21,7 @@ const FooterWrapper = styled.footer`
   color: ${({ theme }) => theme.colors['light-200']};
   text-align: center;
   padding: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 
   a:link,
   a:visited {

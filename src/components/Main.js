@@ -5,7 +5,7 @@ import CVPreview from './CVPreview/CVPreview';
 
 export default function Main() {
   return (
-    <MainWrapper className="main">
+    <MainWrapper>
       <CVForm />
       <CVPreview />
     </MainWrapper>
@@ -14,5 +14,4 @@ export default function Main() {
 
 const MainWrapper = styled.main`
   display: flex;
-  justify-content: center;
 `;
