@@ -93,9 +93,73 @@ body {
   margin: 3rem;
 }
 
+.cv-preview--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv-preview--header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-preview--names {
+}
+
+.cv-preview--first-name,
+.cv-preview--last-name {
+  font-size: 5.2rem;
+  font-weight: 100;
+}
+
+.cv-preview--last-name {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.cv-preview--title {
+  align-self: flex-start;
+  padding: 0 1.8rem;
+  background-color: #374151;
+  color: #e5e7eb;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.list {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+hr {
+  margin: 2rem 0;
+  border: 1px solid #e5e7eb;
+}
+
+.cv-preview--main {
+  display: flex;
+}
+
+.main-left {
+  flex-basis: 20%;
+}
+
+.main-right {
+  flex-basis: 70%;
+}
+
+.cv-preview--photo {
+  width: 200px;
+}
+
+.cv-preview--photo > img {
+  width: 100%;
+}
+
 .footer {
   background-color: #374151;
-  color: #d1d5db;
+  color: #e5e7eb;
   text-align: center;
   padding: 1rem;
   font-size: 1.4rem;
