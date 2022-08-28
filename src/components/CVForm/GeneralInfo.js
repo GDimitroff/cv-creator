@@ -1,8 +1,10 @@
+import styled from 'styled-components';
+
 export default function GeneralInfo(props) {
   return (
-    <div className="form-wrapper">
-      <h3 className="form--title">Personal Information</h3>
-      <form className="form">
+    <FormWrapper>
+      <h3>Personal Information</h3>
+      <form>
         <input
           type="text"
           name="firstName"
@@ -52,6 +54,19 @@ export default function GeneralInfo(props) {
           onChange={props.handleChange}
         />
       </form>
-    </div>
+    </FormWrapper>
   );
 }
+
+const FormWrapper = styled.div`
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+`;

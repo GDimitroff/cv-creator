@@ -1,6 +1,7 @@
+import styled from 'styled-components';
+
 import CVForm from './CVForm/CVForm';
 import CVPreview from './CVPreview/CVPreview';
-import styled from 'styled-components';
 
 export default function Main() {
   return (

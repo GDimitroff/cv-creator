@@ -1,6 +1,7 @@
 import { useContext } from 'react';
-import CVContext from '../../contexts/cv-context';
 import styled from 'styled-components';
+
+import CVContext from '../../contexts/cv-context';
 
 export default function CVPreview() {
   const ctx = useContext(CVContext);
