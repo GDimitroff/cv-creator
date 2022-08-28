@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     font-weight: 400;
     min-height: 100vh;
-    color: ${({ theme }) => theme.colors['dark-100']};
+    color: ${({ theme }) => theme.colors['dark-300']};
     background-color: ${({ theme }) => theme.colors['light-100']};
   }
 
@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
+    background: transparent;
   }
 `;
 

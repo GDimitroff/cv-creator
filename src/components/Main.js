@@ -1,11 +1,17 @@
 import CVForm from './CVForm/CVForm';
 import CVPreview from './CVPreview/CVPreview';
+import styled from 'styled-components';
 
 export default function Main() {
   return (
-    <main className="main">
+    <MainWrapper className="main">
       <CVForm />
       <CVPreview />
-    </main>
+    </MainWrapper>
   );
 }
+
+const MainWrapper = styled.main`
+  display: flex;
+  justify-content: center;
+`;
