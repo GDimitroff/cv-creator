@@ -15,7 +15,7 @@ export default function Header() {
       </div>
       <h1 className={classes.title}>CV Creator</h1>
       <div className={classes.actions}>
-        <Button onClick={ctx.loadExample} text="LoadExample" />
+        <Button onClick={ctx.loadExample} text="Load Example" />
         <Button onClick={ctx.reset} text="Clear" />
         <Button text="Generate PDF" />
         <Button text="Flip icon" />

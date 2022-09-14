@@ -3,8 +3,8 @@
   align-items: center;
   padding: 1rem 3rem;
   height: 60px;
-  color: var(--primary-dark);
-  background-color: var(--secondary-light);
+  color: var(--secondary-gray);
+  background-color: var(--primary-dark);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: sticky;
   top: 0;
@@ -22,7 +22,6 @@ img {
 .title {
   font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: -0.5px;
   margin-right: auto;
 }
 
