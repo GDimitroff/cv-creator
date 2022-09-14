@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Skill from './Skill';
 
+import classes from './Skills.module.css';
+
 export default function Skills(props) {
   const [count, setCount] = useState(1);
 
@@ -15,39 +17,11 @@ export default function Skills(props) {
 
   return (
     <div>
-      <header>
+      <header className={classes.header}>
         <h3>Skills</h3>
-        {/* <FontAwesomeIcon
-          icon={faPlus}
-          className="icon"
-          onClick={handleAddNewSkill}
-        /> */}
+        <button onClick={handleAddNewSkill}>+</button>
       </header>
       {skillsList}
     </div>
   );
 }
-
-// const SkillsWrapper = styled.div`
-//   header {
-//     display: flex;
-//     align-items: center;
-//     gap: 8px;
-//     margin-top: 2rem;
-//     margin-bottom: 1rem;
-//   }
-
-//   .icon {
-//     cursor: pointer;
-//     color: ${({ theme }) => theme.colors['dark-200']};
-//     transition: 0.2s ease-in-out;
-//   }
-
-//   .icon:hover {
-//     color: ${({ theme }) => theme.colors['dark-300']};
-//   }
-
-//   h3 {
-//     font-size: 1.6rem;
-//   }
-// `;

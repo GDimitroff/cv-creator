@@ -42,8 +42,15 @@
   font-size: 1.4rem;
 }
 
+.links li {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+
 .links li:not(:last-child) {
-  margin-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .cv-preview hr {
@@ -101,4 +108,9 @@
 .from-to {
   font-size: 1.2rem;
   color: var(--secondary-dark);
+}
+
+.icon {
+  width: 18px;
+  fill: var(--primary-dark);
 }

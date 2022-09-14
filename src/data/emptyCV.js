@@ -7,6 +7,8 @@ const emptyCV = {
     phoneNumber: '',
     email: '',
     description: '',
+    linkedIn: '',
+    facebook: '',
   },
   experience: [
     {

@@ -14,7 +14,7 @@ export default function CVForm() {
         handleChange={ctx.handleGeneralInfoChange}
         generalInfo={ctx.cv.generalInfo}
       />
-      {/* <Skills /> */}
+      <Skills />
     </section>
   );
 }

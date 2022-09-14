@@ -29,13 +29,6 @@ export default function GeneralInfo(props) {
           onChange={props.handleChange}
         />
         <Input
-          type="text"
-          name="address"
-          placeholder="Address"
-          value={props.generalInfo.address}
-          onChange={props.handleChange}
-        />
-        <Input
           type="tel"
           name="phoneNumber"
           placeholder="Phone number"
@@ -47,6 +40,27 @@ export default function GeneralInfo(props) {
           name="email"
           placeholder="Email"
           value={props.generalInfo.email}
+          onChange={props.handleChange}
+        />
+        <Input
+          type="text"
+          name="address"
+          placeholder="Address"
+          value={props.generalInfo.address}
+          onChange={props.handleChange}
+        />
+        <Input
+          type="text"
+          name="linkedIn"
+          placeholder="LinkedIn"
+          value={props.generalInfo.linkedIn}
+          onChange={props.handleChange}
+        />
+        <Input
+          type="text"
+          name="facebook"
+          placeholder="Facebook"
+          value={props.generalInfo.facebook}
           onChange={props.handleChange}
         />
         <TextArea
