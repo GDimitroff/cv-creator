@@ -45,7 +45,7 @@
 .links li {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 12px;
 }
 
@@ -113,6 +113,7 @@
 .rating {
   display: flex;
   justify-content: space-between;
+  font-size: 1.4rem;
 }
 
 .icon {
@@ -120,6 +121,7 @@
   fill: var(--primary-dark);
 }
 
-.icon2 {
-  width: 18px;
+.star {
+  width: 14px;
+  color: var(--primary-dark);
 }

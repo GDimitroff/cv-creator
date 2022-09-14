@@ -1,8 +1,23 @@
+import { useCV, useCVDispatch } from '../../contexts/CVContext';
+
 import Input from '../UI/Input';
 import TextArea from '../UI/TextArea';
 import classes from './General.module.css';
 
-export default function GeneralInfo(props) {
+export default function GeneralInfo() {
+  const { generalInfo } = useCV();
+  const dispatch = useCVDispatch();
+
+  function handleOnChange(e) {
+    const { name, value } = e.target;
+
+    dispatch({
+      type: 'CHANGE_GENERAL_INFO',
+      name,
+      value,
+    });
+  }
+
   return (
     <div className={classes['general-info']}>
       <h3>Personal Information</h3>
@@ -11,63 +26,63 @@ export default function GeneralInfo(props) {
           type="text"
           name="firstName"
           placeholder="First Name"
-          value={props.generalInfo.firstName}
-          onChange={props.handleChange}
+          value={generalInfo.firstName}
+          onChange={(e) => handleOnChange(e)}
         />
         <Input
           type="text"
           name="lastName"
           placeholder="Last Name"
-          value={props.generalInfo.lastName}
-          onChange={props.handleChange}
+          value={generalInfo.lastName}
+          onChange={(e) => handleOnChange(e)}
         />
         <Input
           type="text"
           name="title"
           placeholder="Title"
-          value={props.generalInfo.title}
-          onChange={props.handleChange}
+          value={generalInfo.title}
+          onChange={(e) => handleOnChange(e)}
         />
         <Input
           type="tel"
           name="phoneNumber"
           placeholder="Phone number"
-          value={props.generalInfo.phoneNumber}
-          onChange={props.handleChange}
+          value={generalInfo.phoneNumber}
+          onChange={(e) => handleOnChange(e)}
         />
         <Input
           type="email"
           name="email"
           placeholder="Email"
-          value={props.generalInfo.email}
-          onChange={props.handleChange}
+          value={generalInfo.email}
+          onChange={(e) => handleOnChange(e)}
         />
         <Input
           type="text"
           name="address"
           placeholder="Address"
-          value={props.generalInfo.address}
-          onChange={props.handleChange}
+          value={generalInfo.address}
+          onChange={(e) => handleOnChange(e)}
         />
         <Input
           type="text"
           name="linkedIn"
           placeholder="LinkedIn"
-          value={props.generalInfo.linkedIn}
-          onChange={props.handleChange}
+          value={generalInfo.linkedIn}
+          onChange={(e) => handleOnChange(e)}
         />
         <Input
           type="text"
           name="facebook"
           placeholder="Facebook"
-          value={props.generalInfo.facebook}
-          onChange={props.handleChange}
+          value={generalInfo.facebook}
+          onChange={(e) => handleOnChange(e)}
         />
         <TextArea
           name="description"
           placeholder="Description"
-          value={props.generalInfo.description}
-          onChange={props.handleChange}
+          value={generalInfo.description}
+          onChange={(e) => handleOnChange(e)}
         />
       </form>
     </div>

@@ -1,12 +1,11 @@
-import { useContext } from 'react';
+import { useCVDispatch } from '../../contexts/CVContext';
 
-import CVContext from '../../contexts/cv-context';
 import logo from '../../assets/logo.png';
 import Button from '../UI/Button';
 import classes from './Header.module.css';
 
 export default function Header() {
-  const ctx = useContext(CVContext);
+  const dispatch = useCVDispatch();
 
   return (
     <header className={classes.header}>
@@ -15,8 +14,14 @@ export default function Header() {
       </div>
       <h1 className={classes.title}>CV Creator</h1>
       <div className={classes.actions}>
-        <Button onClick={ctx.loadExample} text="Load Example" />
-        <Button onClick={ctx.reset} text="Clear" />
+        <Button
+          onClick={() => dispatch({ type: 'LOAD_EXAMPLE_CV' })}
+          text="Load Example"
+        />
+        <Button
+          onClick={() => dispatch({ type: 'LOAD_EMPTY_CV' })}
+          text="Clear"
+        />
         <Button text="Generate PDF" />
         <Button text="Flip icon" />
       </div>

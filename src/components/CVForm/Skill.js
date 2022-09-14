@@ -1,17 +1,30 @@
+import { useCVDispatch } from '../../contexts/CVContext';
+
 import Input from '../UI/Input';
 import classes from './Skill.module.css';
 
-export default function Skill(props) {
+export default function Skill({ skill }) {
+  const dispatch = useCVDispatch();
+
+  const handleChangeSkillName = (e) => {
+    //FIXME: not working
+    const { name, value } = e.target;
+    dispatch({
+      type: 'CHANGE_SKILL_NAME',
+      skill: { id: skill.id, name, value },
+    });
+  };
+
   return (
     <div className={classes.skill}>
       <Input
         type="text"
-        name={props.skill.title}
+        name={skill.title}
         placeholder="Skill"
-        value={props.skill.title}
-        onChange={props.onSkillNameChange}
+        value={skill.title}
+        onChange={handleChangeSkillName}
       />
-      <select name="skill-value" value={props.skill.rating}>
+      <select name="skill-value" value={skill.rating}>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

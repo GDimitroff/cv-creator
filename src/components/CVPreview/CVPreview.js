@@ -1,6 +1,5 @@
-import { useContext } from 'react';
+import { useCV } from '../../contexts/CVContext';
 
-import CVContext from '../../contexts/cv-context';
 import classes from './CVPreview.module.css';
 import {
   PhoneIcon,
@@ -8,15 +7,12 @@ import {
   HomeIcon,
   StarIcon,
 } from '@heroicons/react/24/solid';
-
 import { StarIcon as EmptyStar } from '@heroicons/react/24/outline';
 
 export default function CVPreview() {
-  const ctx = useContext(CVContext);
-  const generalInfo = ctx.cv.generalInfo;
-  const skills = ctx.cv.skills;
-  const education = ctx.cv.education;
+  const { generalInfo, skills, education } = useCV();
 
+  console.log(skills);
   const rating = skills.map((skill) => {
     return (
       <div className={classes.rating}>
@@ -30,10 +26,9 @@ export default function CVPreview() {
     const stars = [];
     for (let i = 1; i <= 10; i++) {
       if (i <= rating) {
-        stars.push(<StarIcon className={classes.icon} />);
+        stars.push(<StarIcon className={classes.star} />);
       } else {
-        console.log('here');
-        stars.push(<EmptyStar className={classes.icon2} />);
+        stars.push(<EmptyStar className={classes.star} />);
       }
     }
 

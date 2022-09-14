@@ -1,14 +1,13 @@
-import Skill from './Skill';
+import { useCV } from '../../contexts/CVContext';
 
+import Skill from './Skill';
 import classes from './Skills.module.css';
 
-export default function Skills(props) {
-  const skillsList = props.skills.map((skill) => (
-    <Skill
-      skill={skill}
-      key={skill.id}
-      onSkillNameChange={props.onSkillNameChange}
-    />
+export default function Skills() {
+  const { skills } = useCV();
+
+  const skillsList = skills.map((skill) => (
+    <Skill skill={skill} key={skill.id} />
   ));
 
   function handleAddNewSkill() {
