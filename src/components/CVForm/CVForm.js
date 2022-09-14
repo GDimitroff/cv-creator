@@ -3,23 +3,18 @@ import { useContext } from 'react';
 import CVContext from '../../contexts/cv-context';
 import Skills from './Skills';
 import GeneralInfo from './General';
+import classes from './CVForm.module.css';
 
 export default function CVForm() {
   const ctx = useContext(CVContext);
 
   return (
-    <div>
+    <section className={classes['cv-form']}>
       <GeneralInfo
         handleChange={ctx.handleGeneralInfoChange}
         generalInfo={ctx.cv.generalInfo}
       />
       {/* <Skills /> */}
-    </div>
+    </section>
   );
 }
-
-// const CVFormWrapper = styled.section`
-//   flex-basis: 35%;
-//   background-color: ${({ theme }) => theme.colors['light-100']};
-//   padding: 3rem;
-// `;

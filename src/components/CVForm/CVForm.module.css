@@ -1,0 +1,5 @@
+.cv-form {
+  flex-basis: 35%;
+  background-color: var(--primary-light);
+  padding: 3rem;
+}

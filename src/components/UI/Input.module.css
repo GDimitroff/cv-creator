@@ -1,4 +1,4 @@
-input {
+.input {
   width: 100%;
   font-size: 1.4rem;
   height: 35px;
@@ -9,15 +9,15 @@ input {
   border-left: 2px solid transparent;
 }
 
-input:focus {
-  background-color: var(--primary-light);
+.input:focus {
+  background-color: var(--secondary-gray);
   border-left: 2px solid var(--primary-dark);
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill::first-line,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+.input:-webkit-autofill,
+.input:-webkit-autofill::first-line,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
   font-family: inherit;
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Skill from '../UI/Skill';
+import Skill from './Skill';
 
 export default function Skills(props) {
   const [count, setCount] = useState(1);

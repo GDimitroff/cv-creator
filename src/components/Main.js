@@ -1,13 +1,12 @@
-import { Fragment } from 'react';
-
 import CVForm from './CVForm/CVForm';
 import CVPreview from './CVPreview/CVPreview';
+import classes from './Main.module.css';
 
 export default function Main() {
   return (
-    <Fragment>
+    <main className={classes.main}>
       <CVForm />
       <CVPreview />
-    </Fragment>
+    </main>
   );
 }

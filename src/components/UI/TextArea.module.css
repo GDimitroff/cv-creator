@@ -1,0 +1,15 @@
+.textarea {
+  width: 100%;
+  font-size: 1.4rem;
+  height: 140px;
+  padding: 5px;
+  resize: none;
+  background-color: var(--secondary-light);
+  transition: 0.4s ease-in-out;
+  border-left: 2px solid transparent;
+}
+
+.textarea:focus {
+  background-color: var(--secondary-gray);
+  border-left: 2px solid var(--primary-dark);
+}

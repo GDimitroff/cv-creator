@@ -1,9 +1,10 @@
 import Input from '../UI/Input';
 import TextArea from '../UI/TextArea';
+import classes from './General.module.css';
 
 export default function GeneralInfo(props) {
   return (
-    <div>
+    <div className={classes['general-info']}>
       <h3>Personal Information</h3>
       <form>
         <Input
@@ -58,16 +59,3 @@ export default function GeneralInfo(props) {
     </div>
   );
 }
-
-// const FormWrapper = styled.div`
-//   h3 {
-//     font-size: 1.6rem;
-//     margin-bottom: 1rem;
-//   }
-
-//   form {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 10px;
-//   }
-// `;

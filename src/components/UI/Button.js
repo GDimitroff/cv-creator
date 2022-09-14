@@ -1,5 +1,9 @@
-import './Button.module.css';
+import classes from './Button.module.css';
 
 export default function Button({ onClick, text }) {
-  return <button onClick={onClick}>{text}</button>;
+  return (
+    <button className={classes.button} onClick={onClick}>
+      {text}
+    </button>
+  );
 }
