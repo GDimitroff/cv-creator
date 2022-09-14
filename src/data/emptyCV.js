@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const emptyCV = {
   generalInfo: {
     firstName: '',
@@ -10,8 +12,16 @@ const emptyCV = {
     linkedIn: '',
     facebook: '',
   },
+  skills: [
+    {
+      id: uuidv4(),
+      title: '',
+      rating: '',
+    },
+  ],
   experience: [
     {
+      id: uuidv4(),
       position: '',
       company: '',
       city: '',
@@ -21,6 +31,7 @@ const emptyCV = {
   ],
   education: [
     {
+      id: uuidv4(),
       universityName: '',
       city: '',
       degree: '',

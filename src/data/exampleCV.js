@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const exampleCV = {
   generalInfo: {
     firstName: 'John',
@@ -11,8 +13,26 @@ const exampleCV = {
     linkedIn: 'LinkedIn.com/username',
     facebook: 'Facebook.com/username',
   },
+  skills: [
+    {
+      id: uuidv4(),
+      title: 'JavaScript',
+      rating: 8,
+    },
+    {
+      id: uuidv4(),
+      title: 'CSS',
+      rating: 9,
+    },
+    {
+      id: uuidv4(),
+      title: 'HTML',
+      rating: 9,
+    },
+  ],
   experience: [
     {
+      id: uuidv4(),
       position: 'Senior Web Developer',
       company: 'Facebook Inc.',
       city: 'Menlo Park',
@@ -20,6 +40,7 @@ const exampleCV = {
       to: 'Present',
     },
     {
+      id: uuidv4(),
       position: 'Junior Web Developer',
       company: 'Tesla Inc.',
       city: 'Palo Alto',
@@ -27,6 +48,7 @@ const exampleCV = {
       to: '2015',
     },
     {
+      id: uuidv4(),
       position: 'UI / UX Designer',
       company: 'Google LLC',
       city: 'Mountain View',
@@ -34,6 +56,7 @@ const exampleCV = {
       to: '2012',
     },
     {
+      id: uuidv4(),
       position: 'Position',
       company: 'Company name',
       city: 'City name',
@@ -43,6 +66,7 @@ const exampleCV = {
   ],
   education: [
     {
+      id: uuidv4(),
       universityName: 'University of Technology',
       city: 'Oklahoma',
       degree: 'Master',
@@ -51,6 +75,7 @@ const exampleCV = {
       to: '2010',
     },
     {
+      id: uuidv4(),
       universityName: 'University of Design Art',
       city: 'New York',
       degree: 'Bachelor',
@@ -59,6 +84,7 @@ const exampleCV = {
       to: '2008',
     },
     {
+      id: uuidv4(),
       universityName: 'Massachusetts Institute of Technology',
       city: 'Massachusetts',
       degree: 'Master',

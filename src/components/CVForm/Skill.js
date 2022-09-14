@@ -4,8 +4,14 @@ import classes from './Skill.module.css';
 export default function Skill(props) {
   return (
     <div className={classes.skill}>
-      <Input type="text" name="skill-input" placeholder="Skill" />
-      <select name="skill-value">
+      <Input
+        type="text"
+        name={props.skill.title}
+        placeholder="Skill"
+        value={props.skill.title}
+        onChange={props.onSkillNameChange}
+      />
+      <select name="skill-value" value={props.skill.rating}>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -17,7 +23,6 @@ export default function Skill(props) {
         <option value="9">9</option>
         <option value="10">10</option>
       </select>
-      {/* <FontAwesomeIcon icon={faSquareMinus} className="icon" /> */}
     </div>
   );
 }

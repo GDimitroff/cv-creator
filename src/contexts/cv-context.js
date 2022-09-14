@@ -6,6 +6,7 @@ import exampleCV from '../data/exampleCV';
 const CVContext = React.createContext({
   cv: {},
   handleGeneralInfoChange: (e) => {},
+  handleSkillNameChange: (e) => {},
   loadExample: () => {},
   reset: () => {},
 });
@@ -25,6 +26,10 @@ export const CVContextProvider = (props) => {
     }));
   };
 
+  const handleSkillNameChange = (e) => {
+    console.log(e.target.value);
+  }
+
   const loadExample = () => {
     setCv(exampleCV);
   };
@@ -38,6 +43,7 @@ export const CVContextProvider = (props) => {
       value={{
         cv,
         handleGeneralInfoChange,
+        handleSkillNameChange,
         loadExample,
         reset,
       }}>

@@ -110,7 +110,16 @@
   color: var(--secondary-dark);
 }
 
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+
 .icon {
   width: 18px;
   fill: var(--primary-dark);
+}
+
+.icon2 {
+  width: 18px;
 }

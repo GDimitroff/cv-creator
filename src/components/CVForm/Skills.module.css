@@ -9,3 +9,9 @@
 .header h3 {
   font-size: 1.6rem;
 }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

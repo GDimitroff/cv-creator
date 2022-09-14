@@ -2,12 +2,43 @@ import { useContext } from 'react';
 
 import CVContext from '../../contexts/cv-context';
 import classes from './CVPreview.module.css';
-import { PhoneIcon, EnvelopeIcon, HomeIcon } from '@heroicons/react/24/solid';
+import {
+  PhoneIcon,
+  EnvelopeIcon,
+  HomeIcon,
+  StarIcon,
+} from '@heroicons/react/24/solid';
+
+import { StarIcon as EmptyStar } from '@heroicons/react/24/outline';
 
 export default function CVPreview() {
   const ctx = useContext(CVContext);
   const generalInfo = ctx.cv.generalInfo;
+  const skills = ctx.cv.skills;
   const education = ctx.cv.education;
+
+  const rating = skills.map((skill) => {
+    return (
+      <div className={classes.rating}>
+        <p>{skill.title}</p>
+        <span>{getStars(skill.rating)}</span>
+      </div>
+    );
+  });
+
+  function getStars(rating) {
+    const stars = [];
+    for (let i = 1; i <= 10; i++) {
+      if (i <= rating) {
+        stars.push(<StarIcon className={classes.icon} />);
+      } else {
+        console.log('here');
+        stars.push(<EmptyStar className={classes.icon2} />);
+      }
+    }
+
+    return stars;
+  }
 
   const educationList = education.map((edu) => {
     return (
@@ -91,6 +122,8 @@ export default function CVPreview() {
             <p>{generalInfo.description}</p>
           </div>
           <hr />
+          <h1 className={classes.heading}>Skills</h1>
+          <div>{rating}</div>
         </div>
       </main>
     </section>
