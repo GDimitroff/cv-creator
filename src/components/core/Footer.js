@@ -1,8 +1,6 @@
-import styled from 'styled-components';
-
 export default function Footer() {
   return (
-    <FooterWrapper className="footer">
+    <footer className="footer">
       <p>
         Made with ❤️ by{' '}
         <a
@@ -12,25 +10,25 @@ export default function Footer() {
           Gospodin Dimitrov
         </a>
       </p>
-    </FooterWrapper>
+    </footer>
   );
 }
 
-const FooterWrapper = styled.footer`
-  background-color: ${({ theme }) => theme.colors['dark-300']};
-  color: ${({ theme }) => theme.colors['light-200']};
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.2rem;
+// const FooterWrapper = styled.footer`
+//   background-color: ${({ theme }) => theme.colors['dark-300']};
+//   color: ${({ theme }) => theme.colors['light-200']};
+//   text-align: center;
+//   padding: 1rem;
+//   font-size: 1.2rem;
 
-  a:link,
-  a:visited {
-    color: ${({ theme }) => theme.colors['light-100']};
-    transition: 0.2s ease-in-out;
-  }
+//   a:link,
+//   a:visited {
+//     color: ${({ theme }) => theme.colors['light-100']};
+//     transition: 0.2s ease-in-out;
+//   }
 
-  a:active,
-  a:hover {
-    color: ${({ theme }) => theme.colors['light-300']};
-  }
-`;
+//   a:active,
+//   a:hover {
+//     color: ${({ theme }) => theme.colors['light-300']};
+//   }
+// `;

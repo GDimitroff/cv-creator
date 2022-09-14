@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import styled from 'styled-components';
 
 import CVContext from '../../contexts/cv-context';
 
@@ -25,7 +24,7 @@ export default function CVPreview() {
   });
 
   return (
-    <CVPreviewWrapper>
+    <div>
       <header className="header">
         <div className="header-left">
           <p>
@@ -61,111 +60,111 @@ export default function CVPreview() {
           <hr />
         </div>
       </main>
-    </CVPreviewWrapper>
+    </div>
   );
 }
 
-const CVPreviewWrapper = styled.section`
-  flex-basis: 65%;
-  background-color: ${({ theme }) => theme.colors['light-200']};
-  padding: 5rem;
-  margin: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+// const CVPreviewWrapper = styled.section`
+//   flex-basis: 65%;
+//   background-color: ${({ theme }) => theme.colors['light-200']};
+//   padding: 5rem;
+//   margin: 3rem;
+//   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
+//   .header {
+//     display: flex;
+//     justify-content: space-between;
+//   }
 
-  .header-left {
-    display: flex;
-    flex-direction: column;
-  }
+//   .header-left {
+//     display: flex;
+//     flex-direction: column;
+//   }
 
-  .first-name,
-  .last-name {
-    font-size: 5.2rem;
-    font-weight: 100;
-  }
+//   .first-name,
+//   .last-name {
+//     font-size: 5.2rem;
+//     font-weight: 100;
+//   }
 
-  .last-name {
-    font-weight: 500;
-    margin-left: 10px;
-  }
+//   .last-name {
+//     font-weight: 500;
+//     margin-left: 10px;
+//   }
 
-  .title {
-    align-self: flex-start;
-    padding: 0 1.8rem;
-    background-color: ${({ theme }) => theme.colors['dark-300']};
-    color: ${({ theme }) => theme.colors['light-300']};
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: 400;
-  }
+//   .title {
+//     align-self: flex-start;
+//     padding: 0 1.8rem;
+//     background-color: ${({ theme }) => theme.colors['dark-300']};
+//     color: ${({ theme }) => theme.colors['light-300']};
+//     text-transform: uppercase;
+//     font-size: 1.6rem;
+//     font-weight: 400;
+//   }
 
-  .links {
-    list-style: none;
-    font-size: 1.4rem;
-  }
+//   .links {
+//     list-style: none;
+//     font-size: 1.4rem;
+//   }
 
-  li:not(:last-child) {
-    margin-bottom: 0.6rem;
-  }
+//   li:not(:last-child) {
+//     margin-bottom: 0.6rem;
+//   }
 
-  hr {
-    margin: 4rem 0;
-    border: 1px solid ${({ theme }) => theme.colors['light-300']};
-  }
+//   hr {
+//     margin: 4rem 0;
+//     border: 1px solid ${({ theme }) => theme.colors['light-300']};
+//   }
 
-  .main {
-    display: flex;
-    justify-content: space-between;
-  }
+//   .main {
+//     display: flex;
+//     justify-content: space-between;
+//   }
 
-  .main-left {
-    flex-basis: 20%;
-  }
+//   .main-left {
+//     flex-basis: 20%;
+//   }
 
-  .main-right {
-    flex-basis: 70%;
-  }
+//   .main-right {
+//     flex-basis: 70%;
+//   }
 
-  h1 {
-    color: ${({ theme }) => theme.colors['dark-200']};
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-  }
+//   h1 {
+//     color: ${({ theme }) => theme.colors['dark-200']};
+//     font-size: 1.8rem;
+//     text-transform: uppercase;
+//     letter-spacing: 2px;
+//     margin-bottom: 1rem;
+//   }
 
-  .panel p {
-    font-size: 1.4rem;
-  }
+//   .panel p {
+//     font-size: 1.4rem;
+//   }
 
-  .vertical-line {
-    border-style: inset;
-    border: 1px solid ${({ theme }) => theme.colors['light-300']};
-  }
+//   .vertical-line {
+//     border-style: inset;
+//     border: 1px solid ${({ theme }) => theme.colors['light-300']};
+//   }
 
-  .education {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+//   .education {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//   }
 
-  .education h2 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin-bottom: 0.2rem;
-  }
+//   .education h2 {
+//     font-size: 1.6rem;
+//     line-height: 1.2;
+//     margin-bottom: 0.2rem;
+//   }
 
-  .university {
-    font-size: 1.4rem;
-    line-height: 1.4;
-  }
+//   .university {
+//     font-size: 1.4rem;
+//     line-height: 1.4;
+//   }
 
-  .from-to {
-    font-size: 1.2rem;
-    color: ${({ theme }) => theme.colors['dark-200']};
-  }
-`;
+//   .from-to {
+//     font-size: 1.2rem;
+//     color: ${({ theme }) => theme.colors['dark-200']};
+//   }
+// `;

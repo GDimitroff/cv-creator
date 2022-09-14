@@ -1,17 +1,13 @@
-import styled from 'styled-components';
+import { Fragment } from 'react';
 
 import CVForm from './CVForm/CVForm';
 import CVPreview from './CVPreview/CVPreview';
 
 export default function Main() {
   return (
-    <MainWrapper>
+    <Fragment>
       <CVForm />
       <CVPreview />
-    </MainWrapper>
+    </Fragment>
   );
 }
-
-const MainWrapper = styled.main`
-  display: flex;
-`;

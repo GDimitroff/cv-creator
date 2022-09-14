@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import emptyCV from '../components/Utils/emptyCV';
-import exampleCV from '../components/Utils/exampleCV';
+import emptyCV from '../data/emptyCV';
+import exampleCV from '../data/exampleCV';
 
 const CVContext = React.createContext({
   cv: {},
@@ -11,7 +11,7 @@ const CVContext = React.createContext({
 });
 
 export const CVContextProvider = (props) => {
-  const [cv, setCv] = useState(emptyCV);
+  const [cv, setCv] = useState(exampleCV);
 
   const handleGeneralInfoChange = (e) => {
     const { name, value } = e.target;

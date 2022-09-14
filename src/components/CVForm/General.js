@@ -1,11 +1,9 @@
-import styled from 'styled-components';
-
-import Input from '../Utils/Input';
-import TextArea from '../Utils/TextArea';
+import Input from '../UI/Input';
+import TextArea from '../UI/TextArea';
 
 export default function GeneralInfo(props) {
   return (
-    <FormWrapper>
+    <div>
       <h3>Personal Information</h3>
       <form>
         <Input
@@ -57,19 +55,19 @@ export default function GeneralInfo(props) {
           onChange={props.handleChange}
         />
       </form>
-    </FormWrapper>
+    </div>
   );
 }
 
-const FormWrapper = styled.div`
-  h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-  }
+// const FormWrapper = styled.div`
+//   h3 {
+//     font-size: 1.6rem;
+//     margin-bottom: 1rem;
+//   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-`;
+//   form {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//   }
+// `;

@@ -3,7 +3,7 @@ import Header from './components/core/Header';
 import Main from './components/Main';
 import Footer from './components/core/Footer';
 
-function App() {
+const App = () => {
   return (
     <CVContextProvider>
       <Header />
@@ -11,6 +11,6 @@ function App() {
       <Footer />
     </CVContextProvider>
   );
-}
+};
 
 export default App;
