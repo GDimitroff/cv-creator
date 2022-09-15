@@ -1,4 +1,5 @@
 import { useCVDispatch } from '../../contexts/CVContext';
+import { MinusCircleIcon } from '@heroicons/react/24/solid';
 
 import Input from '../UI/Input';
 import classes from './Skill.module.css';
@@ -13,6 +14,13 @@ export default function Skill({ skill }) {
     dispatch({
       type: 'CHANGE_SKILL',
       skill: { ...skill, [field]: value },
+    });
+  };
+
+  const handleDeleteSkill = (e) => {
+    dispatch({
+      type: 'DELETE_SKILL',
+      id: skill.id,
     });
   };
 
@@ -40,6 +48,7 @@ export default function Skill({ skill }) {
         <option value="9">9</option>
         <option value="10">10</option>
       </select>
+      <MinusCircleIcon className={classes.delete} onClick={handleDeleteSkill} />
     </div>
   );
 }

@@ -17,7 +17,13 @@
 }
 
 .add {
-  width: 18px;
-  fill: var(--primary-dark);
+  width: 20px;
+  color: var(--primary-dark);
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.add:hover,
+.add:active {
+  color: var(--secondary-dark);
 }

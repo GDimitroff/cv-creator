@@ -42,6 +42,14 @@ function cvReducer(cv, action) {
         ],
       };
     }
+    case 'DELETE_SKILL': {
+      const updatedSkills = cv.skills.filter((s) => s.id !== action.id);
+
+      return {
+        ...cv,
+        skills: updatedSkills,
+      };
+    }
     case 'CHANGE_GENERAL_INFO': {
       return {
         ...cv,
