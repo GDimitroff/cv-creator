@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input {
+  display: flex;
+  gap: 12px;
+}
+
+.button {
+  font-weight: 300;
+  color: var(--primary-light);
+  background-color: var(--primary-dark);
+  align-self: end;
+  padding: 2px 8px;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--secondary-dark);
+}

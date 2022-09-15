@@ -75,6 +75,46 @@ function cvReducer(cv, action) {
 
       return { ...newCV };
     }
+    case 'ADD_EXPERIENCE': {
+      return {
+        ...cv,
+        experience: [
+          {
+            id: uuidv4(),
+            position: '',
+            company: '',
+            city: '',
+            from: '',
+            to: '',
+            description: '',
+          },
+          ...cv.experience,
+        ],
+      };
+    }
+    case 'DELETE_EXPERIENCE': {
+      const updatedExperience = cv.experience.filter((e) => e.id !== action.id);
+
+      return {
+        ...cv,
+        experience: updatedExperience,
+      };
+    }
+    case 'CHANGE_EXPERIENCE': {
+      const index = cv.experience.findIndex(
+        (e) => e.id === action.experience.id
+      );
+
+      const newExperience = [...cv.experience];
+      newExperience[index] = { ...cv.experience[index], ...action.experience };
+
+      const newCV = {
+        ...cv,
+        experience: newExperience,
+      };
+
+      return { ...newCV };
+    }
     case 'ADD_SKILL': {
       return {
         ...cv,
