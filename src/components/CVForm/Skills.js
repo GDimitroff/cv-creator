@@ -4,7 +4,7 @@ import { PlusCircleIcon } from '@heroicons/react/24/solid';
 import Skill from './Skill';
 import classes from './Skills.module.css';
 
-export default function Skills() {
+const Skills = () => {
   const { skills } = useCV();
   const dispatch = useCVDispatch();
 
@@ -27,4 +27,6 @@ export default function Skills() {
       <ul className={classes.skills}>{skillsList}</ul>
     </div>
   );
-}
+};
+
+export default Skills;

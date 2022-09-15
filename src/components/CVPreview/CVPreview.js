@@ -9,7 +9,7 @@ import Experience from './Experience';
 
 import classes from './CVPreview.module.css';
 
-export default function CVPreview() {
+const CVPreview = () => {
   const { generalInfo, skills, education, experience } = useCV();
 
   return (
@@ -33,4 +33,6 @@ export default function CVPreview() {
       </main>
     </section>
   );
-}
+};
+
+export default CVPreview;

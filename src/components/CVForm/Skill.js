@@ -4,7 +4,7 @@ import { MinusCircleIcon } from '@heroicons/react/24/solid';
 import Input from '../UI/Input';
 import classes from './Skill.module.css';
 
-export default function Skill({ skill }) {
+const Skill = ({ skill }) => {
   const dispatch = useCVDispatch();
 
   const handleChangeSkill = (e) => {
@@ -51,4 +51,6 @@ export default function Skill({ skill }) {
       <MinusCircleIcon className={classes.delete} onClick={handleDeleteSkill} />
     </div>
   );
-}
+};
+
+export default Skill;

@@ -1,6 +1,6 @@
 import classes from './Input.module.css';
 
-export default function Input({ type, name, placeholder, value, onChange }) {
+const Input = ({ type, name, placeholder, value, onChange }) => {
   return (
     <input
       className={classes.input}
@@ -11,4 +11,6 @@ export default function Input({ type, name, placeholder, value, onChange }) {
       onChange={onChange}
     />
   );
-}
+};
+
+export default Input;

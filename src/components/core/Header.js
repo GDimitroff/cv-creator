@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 import Button from '../UI/Button';
 import classes from './Header.module.css';
 
-export default function Header() {
+const Header = () => {
   const dispatch = useCVDispatch();
 
   return (
@@ -27,4 +27,6 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

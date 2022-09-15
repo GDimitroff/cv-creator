@@ -1,9 +1,11 @@
 import classes from './Button.module.css';
 
-export default function Button({ onClick, text }) {
+const Button = ({ onClick, text }) => {
   return (
     <button className={classes.button} onClick={onClick}>
       {text}
     </button>
   );
-}
+};
+
+export default Button;

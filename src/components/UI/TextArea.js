@@ -1,6 +1,6 @@
 import classes from './TextArea.module.css';
 
-export default function TextArea({ name, placeholder, value, onChange }) {
+const TextArea = ({ name, placeholder, value, onChange }) => {
   return (
     <textarea
       className={classes.textarea}
@@ -10,4 +10,6 @@ export default function TextArea({ name, placeholder, value, onChange }) {
       onChange={onChange}
     />
   );
-}
+};
+
+export default TextArea;

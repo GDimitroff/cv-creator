@@ -4,7 +4,7 @@ import Input from '../UI/Input';
 import TextArea from '../UI/TextArea';
 import classes from './GeneralInfo.module.css';
 
-export default function GeneralInfo() {
+const GeneralInfo = () => {
   const { generalInfo } = useCV();
   const dispatch = useCVDispatch();
 
@@ -87,4 +87,6 @@ export default function GeneralInfo() {
       </form>
     </div>
   );
-}
+};
+
+export default GeneralInfo;

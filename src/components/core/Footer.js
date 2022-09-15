@@ -1,10 +1,10 @@
 import classes from './Footer.module.css';
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className={classes.footer}>
       <p>
-        Made with ❤️ by{' '}
+        Made with 🤍 by{' '}
         <a
           href="https://github.com/GDimitroff"
           target="_blank"
@@ -14,4 +14,6 @@ export default function Footer() {
       </p>
     </footer>
   );
-}
+};
+
+export default Footer;
