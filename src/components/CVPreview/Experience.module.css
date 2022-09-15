@@ -1,0 +1,24 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: var(--secondary-dark);
+}
+
+.position {
+  font-size: 1.6rem;
+}
+
+.company {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--secondary-dark);
+}
+
+.description {
+  font-size: 1.4rem;
+}

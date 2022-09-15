@@ -5,11 +5,12 @@ import Education from './Education';
 import Skills from './Skills';
 import Awards from './Awards';
 import GeneralInfo from './GeneralInfo';
+import Experience from './Experience';
 
 import classes from './CVPreview.module.css';
 
 export default function CVPreview() {
-  const { generalInfo, skills, education } = useCV();
+  const { generalInfo, skills, education, experience } = useCV();
 
   return (
     <section className={classes['cv-preview']}>
@@ -27,6 +28,7 @@ export default function CVPreview() {
         <div className={classes['main-right']}>
           <GeneralInfo generalInfo={generalInfo} />
           <hr />
+          <Experience experience={experience} />
         </div>
       </main>
     </section>

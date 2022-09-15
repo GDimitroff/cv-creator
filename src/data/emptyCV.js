@@ -27,6 +27,7 @@ const emptyCV = {
       city: '',
       from: '',
       to: '',
+      description: '',
     },
   ],
   education: [

@@ -38,6 +38,8 @@ const exampleCV = {
       city: 'Menlo Park',
       from: '2015',
       to: 'Present',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolores debitis, doloribus porro delectus velit.',
     },
     {
       id: uuidv4(),
@@ -46,6 +48,8 @@ const exampleCV = {
       city: 'Palo Alto',
       from: '2012',
       to: '2015',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim velit beatae numquam obcaecati voluptatum modi.',
     },
     {
       id: uuidv4(),
@@ -54,14 +58,8 @@ const exampleCV = {
       city: 'Mountain View',
       from: '2010',
       to: '2012',
-    },
-    {
-      id: uuidv4(),
-      position: 'Position',
-      company: 'Company name',
-      city: 'City name',
-      from: 'From',
-      to: 'To',
+      description:
+        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem doloremque explicabo delectus quidem minus obcaecati beatae odit exercitationem, vitae, nostrum voluptatibus repellendus amet maiores ea quas dolorem omnis deleniti porro.',
     },
   ],
   education: [
