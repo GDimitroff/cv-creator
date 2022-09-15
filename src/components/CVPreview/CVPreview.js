@@ -12,7 +12,6 @@ import { StarIcon as EmptyStar } from '@heroicons/react/24/outline';
 export default function CVPreview() {
   const { generalInfo, skills, education } = useCV();
 
-  console.log(skills);
   const rating = skills.map((skill) => {
     return (
       <div className={classes.rating}>

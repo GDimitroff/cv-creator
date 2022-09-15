@@ -6,12 +6,13 @@ import classes from './Skill.module.css';
 export default function Skill({ skill }) {
   const dispatch = useCVDispatch();
 
-  const handleChangeSkillName = (e) => {
-    //FIXME: not working
+  const handleChangeSkill = (e) => {
     const { name, value } = e.target;
+    const field = name === 'skill-name' ? 'title' : 'rating';
+
     dispatch({
-      type: 'CHANGE_SKILL_NAME',
-      skill: { id: skill.id, name, value },
+      type: 'CHANGE_SKILL',
+      skill: { ...skill, [field]: value },
     });
   };
 
@@ -19,12 +20,15 @@ export default function Skill({ skill }) {
     <div className={classes.skill}>
       <Input
         type="text"
-        name={skill.title}
+        name="skill-name"
         placeholder="Skill"
         value={skill.title}
-        onChange={handleChangeSkillName}
+        onChange={handleChangeSkill}
       />
-      <select name="skill-value" value={skill.rating}>
+      <select
+        name="skill-rating"
+        value={skill.rating}
+        onChange={handleChangeSkill}>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

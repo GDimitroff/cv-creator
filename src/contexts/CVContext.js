@@ -37,14 +37,13 @@ function cvReducer(cv, action) {
         },
       };
     }
-    case 'CHANGE_SKILL_NAME': {
-      //FIXME: not working as expected
+    case 'CHANGE_SKILL': {
       const index = cv.skills.findIndex(
         (skill) => skill.id === action.skill.id
       );
 
       const newSkills = [...cv.skills];
-      newSkills[index] = action.skill;
+      newSkills[index] = { ...cv.skills[index], ...action.skill };
 
       const newCV = {
         ...cv,
