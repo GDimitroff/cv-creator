@@ -1,17 +1,20 @@
-import { useCV } from '../../contexts/CVContext';
+import { useCV, useCVDispatch } from '../../contexts/CVContext';
 
 import Skill from './Skill';
 import classes from './Skills.module.css';
 
 export default function Skills() {
   const { skills } = useCV();
+  const dispatch = useCVDispatch();
 
   const skillsList = skills.map((skill) => (
     <Skill skill={skill} key={skill.id} />
   ));
 
   function handleAddNewSkill() {
-    console.log('add new skill');
+    dispatch({
+      type: 'ADD_SKILL',
+    });
   }
 
   return (

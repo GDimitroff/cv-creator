@@ -1,4 +1,5 @@
 import { createContext, useContext, useReducer } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 import emptyCV from '../data/emptyCV';
 import exampleCV from '../data/exampleCV';
@@ -28,6 +29,19 @@ export function useCVDispatch() {
 
 function cvReducer(cv, action) {
   switch (action.type) {
+    case 'ADD_SKILL': {
+      return {
+        ...cv,
+        skills: [
+          ...cv.skills,
+          {
+            id: uuidv4(),
+            title: '',
+            rating: '',
+          },
+        ],
+      };
+    }
     case 'CHANGE_GENERAL_INFO': {
       return {
         ...cv,
@@ -38,10 +52,7 @@ function cvReducer(cv, action) {
       };
     }
     case 'CHANGE_SKILL': {
-      const index = cv.skills.findIndex(
-        (skill) => skill.id === action.skill.id
-      );
-
+      const index = cv.skills.findIndex((s) => s.id === action.skill.id);
       const newSkills = [...cv.skills];
       newSkills[index] = { ...cv.skills[index], ...action.skill };
 
