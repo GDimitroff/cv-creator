@@ -1,4 +1,5 @@
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
+import { PlusIcon } from '@heroicons/react/24/solid';
 
 import Skill from './Skill';
 import classes from './Skills.module.css';
@@ -21,7 +22,7 @@ export default function Skills() {
     <div>
       <header className={classes.header}>
         <h3>Skills</h3>
-        <button onClick={handleAddNewSkill}>+</button>
+        <PlusIcon onClick={handleAddNewSkill} className={classes.add}/>
       </header>
       <ul className={classes.skills}>{skillsList}</ul>
     </div>

@@ -3,7 +3,7 @@ import classes from './Experience.module.css';
 const Experience = ({ experience }) => {
   const experienceList = experience.map((e) => {
     return (
-      <div className={classes['experience-item']}>
+      <div className={classes['experience-item']} key={e.id}>
         <p className={classes.date}>
           {e.from} - {e.to}
         </p>
