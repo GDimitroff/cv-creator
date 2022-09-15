@@ -29,16 +29,58 @@ export function useCVDispatch() {
 
 function cvReducer(cv, action) {
   switch (action.type) {
-    case 'ADD_SKILL': {
+    case 'CHANGE_GENERAL_INFO': {
       return {
         ...cv,
-        skills: [
-          ...cv.skills,
+        generalInfo: {
+          ...cv.generalInfo,
+          [action.name]: action.value,
+        },
+      };
+    }
+    case 'ADD_EDUCATION': {
+      return {
+        ...cv,
+        education: [
           {
             id: uuidv4(),
             title: '',
             rating: '',
           },
+          ...cv.education,
+        ],
+      };
+    }
+    case 'DELETE_EDUCATION': {
+      const updatedEducation = cv.education.filter((e) => e.id !== action.id);
+
+      return {
+        ...cv,
+        education: updatedEducation,
+      };
+    }
+    case 'CHANGE_EDUCATION': {
+      const index = cv.education.findIndex((e) => e.id === action.education.id);
+      const newEducations = [...cv.education];
+      newEducations[index] = { ...cv.education[index], ...action.education };
+
+      const newCV = {
+        ...cv,
+        education: newEducations,
+      };
+
+      return { ...newCV };
+    }
+    case 'ADD_SKILL': {
+      return {
+        ...cv,
+        skills: [
+          {
+            id: uuidv4(),
+            title: '',
+            rating: '',
+          },
+          ...cv.skills,
         ],
       };
     }
@@ -48,15 +90,6 @@ function cvReducer(cv, action) {
       return {
         ...cv,
         skills: updatedSkills,
-      };
-    }
-    case 'CHANGE_GENERAL_INFO': {
-      return {
-        ...cv,
-        generalInfo: {
-          ...cv.generalInfo,
-          [action.name]: action.value,
-        },
       };
     }
     case 'CHANGE_SKILL': {
