@@ -42,3 +42,20 @@ button {
   cursor: pointer;
   background: transparent;
 }
+
+h2 {
+  color: var(--secondary-dark);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+hr {
+  margin: 4rem 0;
+  border: 1px solid var(--secondary-gray);
+}
+
+p {
+  font-size: 1.4rem;
+}

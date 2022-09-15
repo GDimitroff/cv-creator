@@ -2,7 +2,7 @@ import { useCV, useCVDispatch } from '../../contexts/CVContext';
 
 import Input from '../UI/Input';
 import TextArea from '../UI/TextArea';
-import classes from './General.module.css';
+import classes from './GeneralInfo.module.css';
 
 export default function GeneralInfo() {
   const { generalInfo } = useCV();

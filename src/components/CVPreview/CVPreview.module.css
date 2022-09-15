@@ -6,122 +6,22 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-left {
-  display: flex;
-  flex-direction: column;
-}
-
-.first-name,
-.last-name {
-  font-size: 5.2rem;
-  font-weight: 100;
-}
-
-.last-name {
-  font-weight: 500;
-  margin-left: 10px;
-}
-
-.title {
-  align-self: flex-start;
-  padding: 0 1.8rem;
-  background-color: var(--primary-dark);
-  color: var(--secondary-light);
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.links {
-  list-style: none;
-  font-size: 1.4rem;
-}
-
-.links li {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 12px;
-}
-
-.links li:not(:last-child) {
-  margin-bottom: 1.2rem;
-}
-
-.cv-preview hr {
-  margin: 4rem 0;
-  border: 1px solid var(--secondary-gray);
-}
-
 .main {
   display: flex;
   justify-content: space-between;
 }
 
 .main-left {
-  flex-basis: 20%;
+  flex-basis: 25%;
 }
 
 .main-right {
-  flex-basis: 70%;
-}
-
-.heading {
-  color: var(--secondary-dark);
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-}
-
-.panel p {
-  font-size: 1.4rem;
+  flex-basis: 65%;
 }
 
 .vertical-line {
   border-style: inset;
-  border: 1px solid var(--secondary-light);
+  border: 1px solid var(--secondary-gray);
 }
 
-.education {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-.education h2 {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  margin-bottom: 0.2rem;
-}
-
-.university {
-  font-size: 1.4rem;
-  line-height: 1.4;
-}
-
-.from-to {
-  font-size: 1.2rem;
-  color: var(--secondary-dark);
-}
-
-.rating {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
-}
-
-.icon {
-  width: 18px;
-  fill: var(--primary-dark);
-}
-
-.star {
-  width: 14px;
-  color: var(--primary-dark);
-}

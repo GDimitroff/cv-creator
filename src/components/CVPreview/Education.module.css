@@ -1,0 +1,21 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+.university {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.from-to {
+  font-size: 1.2rem;
+  color: var(--secondary-dark);
+}
