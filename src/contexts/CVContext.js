@@ -44,8 +44,12 @@ function cvReducer(cv, action) {
         education: [
           {
             id: uuidv4(),
-            title: '',
-            rating: '',
+            universityName: '',
+            city: '',
+            degree: '',
+            subject: '',
+            from: '',
+            to: '',
           },
           ...cv.education,
         ],

@@ -7,9 +7,7 @@ const CVForm = () => {
   return (
     <section className={classes['cv-form']}>
       <GeneralInfo />
-      <hr />
-      <Education/>
-      <hr />
+      <Education />
       <Skills />
     </section>
   );

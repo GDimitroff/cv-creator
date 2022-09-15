@@ -3,7 +3,7 @@ import classes from './Education.module.css';
 const Education = ({ education }) => {
   const educationList = education.map((edu) => {
     return (
-      <div key={edu.universityName}>
+      <div key={edu.id}>
         <h3>
           {edu.degree} of {edu.subject}
         </h3>

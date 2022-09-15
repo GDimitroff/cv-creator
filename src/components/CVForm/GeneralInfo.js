@@ -22,20 +22,22 @@ const GeneralInfo = () => {
     <div className={classes['general-info']}>
       <h3>Personal Information</h3>
       <form>
-        <Input
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-          value={generalInfo.firstName}
-          onChange={(e) => handleOnChange(e)}
-        />
-        <Input
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-          value={generalInfo.lastName}
-          onChange={(e) => handleOnChange(e)}
-        />
+        <div className={classes.input}>
+          <Input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            value={generalInfo.firstName}
+            onChange={(e) => handleOnChange(e)}
+          />
+          <Input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value={generalInfo.lastName}
+            onChange={(e) => handleOnChange(e)}
+          />
+        </div>
         <Input
           type="text"
           name="title"
@@ -43,20 +45,22 @@ const GeneralInfo = () => {
           value={generalInfo.title}
           onChange={(e) => handleOnChange(e)}
         />
-        <Input
-          type="tel"
-          name="phoneNumber"
-          placeholder="Phone number"
-          value={generalInfo.phoneNumber}
-          onChange={(e) => handleOnChange(e)}
-        />
-        <Input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={generalInfo.email}
-          onChange={(e) => handleOnChange(e)}
-        />
+        <div className={classes.input}>
+          <Input
+            type="tel"
+            name="phoneNumber"
+            placeholder="Phone number"
+            value={generalInfo.phoneNumber}
+            onChange={(e) => handleOnChange(e)}
+          />
+          <Input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={generalInfo.email}
+            onChange={(e) => handleOnChange(e)}
+          />
+        </div>
         <Input
           type="text"
           name="address"
@@ -64,20 +68,22 @@ const GeneralInfo = () => {
           value={generalInfo.address}
           onChange={(e) => handleOnChange(e)}
         />
-        <Input
-          type="text"
-          name="linkedIn"
-          placeholder="LinkedIn"
-          value={generalInfo.linkedIn}
-          onChange={(e) => handleOnChange(e)}
-        />
-        <Input
-          type="text"
-          name="facebook"
-          placeholder="Facebook"
-          value={generalInfo.facebook}
-          onChange={(e) => handleOnChange(e)}
-        />
+        <div className={classes.input}>
+          <Input
+            type="text"
+            name="linkedIn"
+            placeholder="LinkedIn"
+            value={generalInfo.linkedIn}
+            onChange={(e) => handleOnChange(e)}
+          />
+          <Input
+            type="text"
+            name="facebook"
+            placeholder="Facebook"
+            value={generalInfo.facebook}
+            onChange={(e) => handleOnChange(e)}
+          />
+        </div>
         <TextArea
           name="description"
           placeholder="Description"

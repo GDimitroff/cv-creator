@@ -8,3 +8,8 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.input {
+  display: flex;
+  gap: 12px;
+}
