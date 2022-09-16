@@ -19,6 +19,17 @@ const emptyCV = {
       rating: '',
     },
   ],
+  education: [
+    {
+      id: uuidv4(),
+      universityName: '',
+      city: '',
+      degree: '',
+      subject: '',
+      from: '',
+      to: '',
+    },
+  ],
   experience: [
     {
       id: uuidv4(),
@@ -30,15 +41,12 @@ const emptyCV = {
       description: '',
     },
   ],
-  education: [
+  awards: [
     {
       id: uuidv4(),
-      universityName: '',
-      city: '',
-      degree: '',
-      subject: '',
-      from: '',
-      to: '',
+      title: '',
+      organization: '',
+      year: '',
     },
   ],
 };

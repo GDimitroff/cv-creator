@@ -17,7 +17,7 @@ const Skill = ({ skill }) => {
     });
   };
 
-  const handleDeleteSkill = (e) => {
+  const handleDeleteSkill = () => {
     dispatch({
       type: 'DELETE_SKILL',
       id: skill.id,
