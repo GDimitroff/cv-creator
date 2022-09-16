@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
-import { PlusCircleIcon } from '@heroicons/react/24/solid';
 
 import SectionHeader from './SectionHeader';
 import SectionWrapper from '../UI/SectionWrapper';
 import ExperienceForm from './ExperienceForm';
-import classes from './Experience.module.css';
+import { PlusIcon } from '../UI/Icons';
 
 const Experience = () => {
   const [isShown, setIsShown] = useState(false);
@@ -35,10 +34,7 @@ const Experience = () => {
       />
       {isShown && (
         <SectionWrapper>
-          <PlusCircleIcon
-            onClick={handleAddExperience}
-            className={classes.add}
-          />
+          <PlusIcon onClick={handleAddExperience} />
           {experienceList}
         </SectionWrapper>
       )}

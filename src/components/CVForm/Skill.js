@@ -1,7 +1,7 @@
 import { useCVDispatch } from '../../contexts/CVContext';
-import { MinusCircleIcon } from '@heroicons/react/24/solid';
 
 import Input from '../UI/Input';
+import { MinusIcon } from '../UI/Icons';
 import classes from './Skill.module.css';
 
 const Skill = ({ skill }) => {
@@ -48,7 +48,7 @@ const Skill = ({ skill }) => {
         <option value="9">9</option>
         <option value="10">10</option>
       </select>
-      <MinusCircleIcon className={classes.delete} onClick={handleDeleteSkill} />
+      <MinusIcon onClick={handleDeleteSkill} />
     </div>
   );
 };

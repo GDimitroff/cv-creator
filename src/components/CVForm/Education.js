@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
-import { PlusCircleIcon } from '@heroicons/react/24/solid';
 
 import SectionHeader from './SectionHeader';
 import SectionWrapper from '../UI/SectionWrapper';
 import EducationForm from './EducationForm';
-import classes from './Education.module.css';
+import { PlusIcon } from '../UI/Icons';
 
 const Education = () => {
   const [isShown, setIsShown] = useState(false);
@@ -35,10 +34,7 @@ const Education = () => {
       />
       {isShown && (
         <SectionWrapper>
-          <PlusCircleIcon
-            onClick={handleAddEducation}
-            className={classes.add}
-          />
+          <PlusIcon onClick={handleAddEducation} />
           {educationList}
         </SectionWrapper>
       )}

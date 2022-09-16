@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
-import { PlusCircleIcon } from '@heroicons/react/24/solid';
 
 import SectionHeader from './SectionHeader';
 import SectionWrapper from '../UI/SectionWrapper';
 import InputFieldsWrapper from '../UI/InputFieldsWrapper';
+import { PlusIcon } from '../UI/Icons';
 import Skill from './Skill';
-import classes from './Skills.module.css';
 
 const Skills = () => {
   const [isShown, setIsShown] = useState(false);
@@ -36,7 +35,7 @@ const Skills = () => {
       />
       {isShown && (
         <SectionWrapper>
-          <PlusCircleIcon onClick={handleAddNewSkill} className={classes.add} />
+          <PlusIcon onClick={handleAddNewSkill} />
           <InputFieldsWrapper>{skillsList}</InputFieldsWrapper>
         </SectionWrapper>
       )}

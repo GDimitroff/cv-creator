@@ -20,9 +20,3 @@
   color: var(--secondary-gray);
   font-weight: 400;
 }
-
-.toggle {
-  width: 20px;
-  color: var(--secondary-gray);
-  cursor: pointer;
-}
