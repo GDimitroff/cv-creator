@@ -2,19 +2,3 @@
   display: flex;
   gap: 12px;
 }
-
-.button {
-  align-self: flex-end;
-  font-weight: 300;
-  color: var(--primary-light);
-  background-color: var(--primary-dark);
-  padding: 2px 8px;
-  font-size: 1.4rem;
-  border-radius: 6px;
-  transition: 0.2s ease-in-out;
-}
-
-.button:hover,
-.button:active {
-  background-color: var(--hover-dark);
-}

@@ -2,6 +2,7 @@ import { useCVDispatch } from '../../contexts/CVContext';
 
 import InputFieldsWrapper from '../UI/InputFieldsWrapper';
 import Input from '../UI/Input';
+import Button from '../UI/Button';
 import classes from './EducationForm.module.css';
 
 const EducationForm = ({ education }) => {
@@ -73,12 +74,7 @@ const EducationForm = ({ education }) => {
           onChange={(e) => handleOnChange(e)}
         />
       </div>
-      <button
-        className={classes.button}
-        type="button"
-        onClick={handleDeleteEducation}>
-        Delete
-      </button>
+      <Button className="alt" onClick={handleDeleteEducation} text="Delete" />
     </InputFieldsWrapper>
   );
 };

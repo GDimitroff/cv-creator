@@ -2,6 +2,7 @@ import { useCVDispatch } from '../../contexts/CVContext';
 
 import InputFieldsWrapper from '../UI/InputFieldsWrapper';
 import Input from '../UI/Input';
+import Button from '../UI/Button';
 import TextArea from '../UI/TextArea';
 import classes from './ExperienceForm.module.css';
 
@@ -72,12 +73,7 @@ const ExperienceForm = ({ experience }) => {
           onChange={(e) => handleOnChange(e)}
         />
       </div>
-      <button
-        className={classes.button}
-        type="button"
-        onClick={handleDeleteExperience}>
-        Delete
-      </button>
+      <Button className="alt" onClick={handleDeleteExperience} text="Delete" />
     </InputFieldsWrapper>
   );
 };

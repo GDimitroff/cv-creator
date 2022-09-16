@@ -10,3 +10,15 @@
   color: var(--primary-dark);
   background: var(--primary-gray);
 }
+
+.alt {
+  align-self: flex-end;
+  color: var(--secondary-gray);
+  background-color: var(--primary-dark);
+}
+
+.alt:hover,
+.alt:active {
+  color: var(--secondary-gray);
+  background-color: var(--hover-dark);
+}
