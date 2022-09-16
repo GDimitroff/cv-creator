@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  animation: 0.6s slide-down;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
