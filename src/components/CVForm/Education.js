@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
 import { PlusCircleIcon } from '@heroicons/react/24/solid';
 
+import SectionHeader from './SectionHeader';
 import EducationForm from './EducationForm';
+import SectionWrapper from '../UI/SectionWrapper';
 import classes from './Education.module.css';
 
 const Education = () => {
+  const [isShown, setIsShown] = useState(false);
   const { education } = useCV();
   const dispatch = useCVDispatch();
 
@@ -14,17 +18,30 @@ const Education = () => {
     });
   };
 
-  const educationList = education.map((e) => {
-    return <EducationForm education={e} key={e.id} />;
+  function handleToggleSection() {
+    setIsShown((prevIsShown) => !prevIsShown);
+  }
+
+  const educationList = education.map((edu) => {
+    return <EducationForm education={edu} key={edu.id} />;
   });
 
   return (
-    <div>
-      <header className={classes.header}>
-        <h3>Education</h3>
-        <PlusCircleIcon onClick={handleAddEducation} className={classes.add} />
-      </header>
-      <div className={classes.education}>{educationList}</div>
+    <div className={classes.education}>
+      <SectionHeader
+        text="Education"
+        onToggleSection={handleToggleSection}
+        isShown={isShown}
+      />
+      {isShown && (
+        <SectionWrapper>
+          <PlusCircleIcon
+            onClick={handleAddEducation}
+            className={classes.add}
+          />
+          {educationList}
+        </SectionWrapper>
+      )}
     </div>
   );
 };

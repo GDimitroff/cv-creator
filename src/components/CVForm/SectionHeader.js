@@ -6,20 +6,10 @@ import classes from './SectionHeader.module.css';
 
 const SectionHeader = (props) => {
   return (
-    <div className={classes.header}>
+    <div className={classes.header} onClick={props.onToggleSection}>
       <h3>{props.text}</h3>
-      {!props.isShown && (
-        <ChevronDoubleDownIcon
-          onClick={props.onToggleSection}
-          className={classes.toggle}
-        />
-      )}
-      {props.isShown && (
-        <ChevronDoubleUpIcon
-          onClick={props.onToggleSection}
-          className={classes.toggle}
-        />
-      )}
+      {!props.isShown && <ChevronDoubleDownIcon className={classes.toggle} />}
+      {props.isShown && <ChevronDoubleUpIcon className={classes.toggle} />}
     </div>
   );
 };

@@ -6,6 +6,13 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.header:hover,
+.header:active {
+  background-color: var(--hover-dark);
 }
 
 .header h3 {

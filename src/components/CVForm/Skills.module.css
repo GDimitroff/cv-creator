@@ -25,5 +25,5 @@
 
 .add:hover,
 .add:active {
-  color: var(--secondary-dark);
+  color: var(--hover-dark);
 }

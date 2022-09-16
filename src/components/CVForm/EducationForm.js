@@ -1,5 +1,6 @@
 import { useCVDispatch } from '../../contexts/CVContext';
 
+import InputFieldsWrapper from '../UI/InputFieldsWrapper';
 import Input from '../UI/Input';
 import classes from './EducationForm.module.css';
 
@@ -23,7 +24,7 @@ const EducationForm = ({ education }) => {
   };
 
   return (
-    <form className={classes.form}>
+    <InputFieldsWrapper>
       <div className={classes.input}>
         <Input
           type="text"
@@ -78,7 +79,7 @@ const EducationForm = ({ education }) => {
         onClick={handleDeleteEducation}>
         Delete
       </button>
-    </form>
+    </InputFieldsWrapper>
   );
 };
 

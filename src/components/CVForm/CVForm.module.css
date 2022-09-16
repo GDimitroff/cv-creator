@@ -3,3 +3,7 @@
   background-color: var(--primary-light);
   padding: 3rem;
 }
+
+.cv-form > div:not(:last-child) {
+  margin-bottom: 2rem;
+}

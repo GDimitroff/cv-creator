@@ -1,15 +1,10 @@
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
 .input {
   display: flex;
   gap: 12px;
 }
 
 .button {
+  align-self: flex-end;
   font-weight: 300;
   color: var(--primary-light);
   background-color: var(--primary-dark);
@@ -21,5 +16,5 @@
 
 .button:hover,
 .button:active {
-  background-color: var(--secondary-dark);
+  background-color: var(--hover-dark);
 }
