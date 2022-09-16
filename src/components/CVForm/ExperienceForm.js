@@ -1,10 +1,10 @@
 import { useCVDispatch } from '../../contexts/CVContext';
 
 import InputFieldsWrapper from '../UI/InputFieldsWrapper';
+import InputRow from '../UI/InputRow';
 import Input from '../UI/Input';
 import Button from '../UI/Button';
 import TextArea from '../UI/TextArea';
-import classes from './ExperienceForm.module.css';
 
 const ExperienceForm = ({ experience }) => {
   const dispatch = useCVDispatch();
@@ -26,7 +26,7 @@ const ExperienceForm = ({ experience }) => {
   };
 
   return (
-    <InputFieldsWrapper className={classes.form}>
+    <InputFieldsWrapper>
       <Input
         type="text"
         name="position"
@@ -34,7 +34,7 @@ const ExperienceForm = ({ experience }) => {
         value={experience.position}
         onChange={(e) => handleOnChange(e)}
       />
-      <div className={classes.input}>
+      <InputRow>
         <Input
           type="text"
           name="company"
@@ -49,7 +49,7 @@ const ExperienceForm = ({ experience }) => {
           value={experience.city}
           onChange={(e) => handleOnChange(e)}
         />
-      </div>
+      </InputRow>
       <TextArea
         type="text"
         name="description"
@@ -57,7 +57,7 @@ const ExperienceForm = ({ experience }) => {
         value={experience.description}
         onChange={(e) => handleOnChange(e)}
       />
-      <div className={classes.input}>
+      <InputRow>
         <Input
           type="tel"
           name="from"
@@ -72,7 +72,7 @@ const ExperienceForm = ({ experience }) => {
           value={experience.to}
           onChange={(e) => handleOnChange(e)}
         />
-      </div>
+      </InputRow>
       <Button className="alt" onClick={handleDeleteExperience} text="Delete" />
     </InputFieldsWrapper>
   );

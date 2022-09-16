@@ -1,9 +1,9 @@
 import { useCVDispatch } from '../../contexts/CVContext';
 
 import InputFieldsWrapper from '../UI/InputFieldsWrapper';
+import InputRow from '../UI/InputRow';
 import Input from '../UI/Input';
 import Button from '../UI/Button';
-import classes from './EducationForm.module.css';
 
 const EducationForm = ({ education }) => {
   const dispatch = useCVDispatch();
@@ -26,7 +26,7 @@ const EducationForm = ({ education }) => {
 
   return (
     <InputFieldsWrapper>
-      <div className={classes.input}>
+      <InputRow>
         <Input
           type="text"
           name="universityName"
@@ -41,8 +41,8 @@ const EducationForm = ({ education }) => {
           value={education.city}
           onChange={(e) => handleOnChange(e)}
         />
-      </div>
-      <div className={classes.input}>
+      </InputRow>
+      <InputRow>
         <Input
           type="text"
           name="degree"
@@ -57,8 +57,8 @@ const EducationForm = ({ education }) => {
           value={education.subject}
           onChange={(e) => handleOnChange(e)}
         />
-      </div>
-      <div className={classes.input}>
+      </InputRow>
+      <InputRow>
         <Input
           type="tel"
           name="from"
@@ -73,7 +73,7 @@ const EducationForm = ({ education }) => {
           value={education.to}
           onChange={(e) => handleOnChange(e)}
         />
-      </div>
+      </InputRow>
       <Button className="alt" onClick={handleDeleteEducation} text="Delete" />
     </InputFieldsWrapper>
   );

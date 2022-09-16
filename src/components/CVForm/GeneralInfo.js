@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
 
-import Input from '../UI/Input';
-import TextArea from '../UI/TextArea';
 import SectionHeader from './SectionHeader';
 import SectionWrapper from '../UI/SectionWrapper';
 import InputFieldsWrapper from '../UI/InputFieldsWrapper';
-import classes from './GeneralInfo.module.css';
+import InputRow from '../UI/InputRow';
+import Input from '../UI/Input';
+import TextArea from '../UI/TextArea';
 
 const GeneralInfo = () => {
   const [isShown, setIsShown] = useState(true);
@@ -37,7 +37,7 @@ const GeneralInfo = () => {
       {isShown && (
         <SectionWrapper>
           <InputFieldsWrapper>
-            <div className={classes.input}>
+            <InputRow>
               <Input
                 type="text"
                 name="firstName"
@@ -52,7 +52,7 @@ const GeneralInfo = () => {
                 value={generalInfo.lastName}
                 onChange={(e) => handleOnChange(e)}
               />
-            </div>
+            </InputRow>
             <Input
               type="text"
               name="title"
@@ -60,7 +60,7 @@ const GeneralInfo = () => {
               value={generalInfo.title}
               onChange={(e) => handleOnChange(e)}
             />
-            <div className={classes.input}>
+            <InputRow>
               <Input
                 type="tel"
                 name="phoneNumber"
@@ -75,7 +75,7 @@ const GeneralInfo = () => {
                 value={generalInfo.email}
                 onChange={(e) => handleOnChange(e)}
               />
-            </div>
+            </InputRow>
             <Input
               type="text"
               name="address"
@@ -83,7 +83,7 @@ const GeneralInfo = () => {
               value={generalInfo.address}
               onChange={(e) => handleOnChange(e)}
             />
-            <div className={classes.input}>
+            <InputRow>
               <Input
                 type="text"
                 name="linkedIn"
@@ -98,7 +98,7 @@ const GeneralInfo = () => {
                 value={generalInfo.facebook}
                 onChange={(e) => handleOnChange(e)}
               />
-            </div>
+            </InputRow>
             <TextArea
               name="description"
               placeholder="Description"
