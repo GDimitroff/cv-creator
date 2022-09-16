@@ -1,5 +1,6 @@
 import { useCVDispatch } from '../../contexts/CVContext';
 
+import InputFieldsWrapper from '../UI/InputFieldsWrapper';
 import Input from '../UI/Input';
 import TextArea from '../UI/TextArea';
 import classes from './ExperienceForm.module.css';
@@ -24,7 +25,7 @@ const ExperienceForm = ({ experience }) => {
   };
 
   return (
-    <form className={classes.form}>
+    <InputFieldsWrapper className={classes.form}>
       <Input
         type="text"
         name="position"
@@ -77,7 +78,7 @@ const ExperienceForm = ({ experience }) => {
         onClick={handleDeleteExperience}>
         Delete
       </button>
-    </form>
+    </InputFieldsWrapper>
   );
 };
 

@@ -1,17 +1,5 @@
-.header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.header h3 {
-  font-size: 1.6rem;
-}
-
 .add {
-  width: 20px;
+  width: 32px;
   color: var(--primary-dark);
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -20,10 +8,4 @@
 .add:hover,
 .add:active {
   color: var(--hover-dark);
-}
-
-.education {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }

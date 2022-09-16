@@ -3,8 +3,8 @@ import { useCV, useCVDispatch } from '../../contexts/CVContext';
 import { PlusCircleIcon } from '@heroicons/react/24/solid';
 
 import SectionHeader from './SectionHeader';
-import EducationForm from './EducationForm';
 import SectionWrapper from '../UI/SectionWrapper';
+import EducationForm from './EducationForm';
 import classes from './Education.module.css';
 
 const Education = () => {
@@ -27,7 +27,7 @@ const Education = () => {
   });
 
   return (
-    <div className={classes.education}>
+    <div>
       <SectionHeader
         text="Education"
         onToggleSection={handleToggleSection}
