@@ -18,9 +18,9 @@ const Education = () => {
     });
   };
 
-  function handleToggleSection() {
+  const handleToggleSection = () => {
     setIsShown((prevIsShown) => !prevIsShown);
-  }
+  };
 
   const educationList = education.map((edu) => {
     return <EducationForm education={edu} key={edu.id} />;

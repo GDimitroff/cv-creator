@@ -18,9 +18,9 @@ const Experience = () => {
     });
   };
 
-  function handleToggleSection() {
+  const handleToggleSection = () => {
     setIsShown((prevIsShown) => !prevIsShown);
-  }
+  };
 
   const experienceList = experience.map((exp) => {
     return <ExperienceForm experience={exp} key={exp.id} />;

@@ -1,23 +1,5 @@
-.header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.header h3 {
-  font-size: 1.6rem;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .add {
-  width: 20px;
+  width: 32px;
   color: var(--primary-dark);
   cursor: pointer;
   transition: 0.2s ease-in-out;

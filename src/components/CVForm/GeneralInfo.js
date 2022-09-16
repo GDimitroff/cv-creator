@@ -23,9 +23,9 @@ const GeneralInfo = () => {
     });
   }
 
-  function handleToggleSection() {
+  const handleToggleSection = () => {
     setIsShown((prevIsShown) => !prevIsShown);
-  }
+  };
 
   return (
     <div>

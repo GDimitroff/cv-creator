@@ -1,10 +1,15 @@
+import { useState } from 'react';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
 import { PlusCircleIcon } from '@heroicons/react/24/solid';
 
+import SectionHeader from './SectionHeader';
+import SectionWrapper from '../UI/SectionWrapper';
+import InputFieldsWrapper from '../UI/InputFieldsWrapper';
 import Skill from './Skill';
 import classes from './Skills.module.css';
 
 const Skills = () => {
+  const [isShown, setIsShown] = useState(false);
   const { skills } = useCV();
   const dispatch = useCVDispatch();
 
@@ -18,13 +23,23 @@ const Skills = () => {
     });
   };
 
+  const handleToggleSection = () => {
+    setIsShown((prevIsShown) => !prevIsShown);
+  };
+
   return (
     <div>
-      <header className={classes.header}>
-        <h3>Skills</h3>
-        <PlusCircleIcon onClick={handleAddNewSkill} className={classes.add} />
-      </header>
-      <ul className={classes.skills}>{skillsList}</ul>
+      <SectionHeader
+        text="Skills"
+        onToggleSection={handleToggleSection}
+        isShown={isShown}
+      />
+      {isShown && (
+        <SectionWrapper>
+          <PlusCircleIcon onClick={handleAddNewSkill} className={classes.add} />
+          <InputFieldsWrapper>{skillsList}</InputFieldsWrapper>
+        </SectionWrapper>
+      )}
     </div>
   );
 };
