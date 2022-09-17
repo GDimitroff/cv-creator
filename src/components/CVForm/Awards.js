@@ -7,7 +7,6 @@ import InputFieldsWrapper from '../UI/InputFieldsWrapper';
 import Award from './Award';
 import { PlusIcon } from '../UI/Icons';
 
-//TODO: double check everything and implement dispatch actions
 const Awards = () => {
   const { awards } = useCV();
   const dispatch = useCVDispatch();

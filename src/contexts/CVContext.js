@@ -148,6 +148,40 @@ function cvReducer(cv, action) {
 
       return { ...newCV };
     }
+    case 'ADD_AWARD': {
+      return {
+        ...cv,
+        awards: [
+          {
+            id: uuidv4(),
+            title: '',
+            organization: '',
+            year: '',
+          },
+          ...cv.awards,
+        ],
+      };
+    }
+    case 'DELETE_AWARD': {
+      const updatedAwards = cv.awards.filter((a) => a.id !== action.id);
+
+      return {
+        ...cv,
+        awards: updatedAwards,
+      };
+    }
+    case 'CHANGE_AWARD': {
+      const index = cv.awards.findIndex((a) => a.id === action.award.id);
+      const newAwards = [...cv.awards];
+      newAwards[index] = { ...cv.awards[index], ...action.award };
+
+      const newCV = {
+        ...cv,
+        awards: newAwards,
+      };
+
+      return { ...newCV };
+    }
     case 'LOAD_EXAMPLE_CV': {
       return { ...exampleCV };
     }
