@@ -16,9 +16,9 @@ const Skills = ({ skills }) => {
     const stars = [];
     for (let i = 1; i <= 10; i++) {
       if (i <= rating) {
-        stars.push(<StarIcon className={classes.star} key={i} />);
+        stars.push(<StarIcon className={classes.icon} key={i} />);
       } else {
-        stars.push(<EmptyStar className={classes.star} key={i} />);
+        stars.push(<EmptyStar className={classes.icon} key={i} />);
       }
     }
 

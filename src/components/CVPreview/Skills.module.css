@@ -11,16 +11,7 @@
   font-size: 1.4rem;
 }
 
-.rating p {
-  text-transform: uppercase;
-}
-
 .icon {
-  width: 18px;
-  fill: var(--primary-dark);
-}
-
-.star {
-  width: 14px;
+  width: 16px;
   color: var(--primary-dark);
 }
