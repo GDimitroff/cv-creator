@@ -1,0 +1,39 @@
+.interests {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  background-color: var(--secondary-gray);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-wrapper.active {
+  border: 2px solid var(--primary-dark);
+}
+
+.icon {
+  width: 18px;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: var(--secondary-dark);
+}

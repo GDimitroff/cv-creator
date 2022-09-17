@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
 
 import SectionHeader from './SectionHeader';
 import SectionWrapper from '../UI/SectionWrapper';
 import EducationForm from './EducationForm';
-import { PlusIcon } from '../UI/Icons';
 
 const Education = () => {
   const [isShown, setIsShown] = useState(false);
@@ -34,7 +35,12 @@ const Education = () => {
       />
       {isShown && (
         <SectionWrapper>
-          <PlusIcon onClick={handleAddEducation} />
+          <FontAwesomeIcon
+            icon={faCirclePlus}
+            className="icon flex-start"
+            onClick={handleAddEducation}
+            size="lg"
+          />
           {educationList}
         </SectionWrapper>
       )}

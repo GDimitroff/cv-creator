@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
 
 import SectionHeader from './SectionHeader';
 import SectionWrapper from '../UI/SectionWrapper';
 import ExperienceForm from './ExperienceForm';
-import { PlusIcon } from '../UI/Icons';
 
 const Experience = () => {
   const [isShown, setIsShown] = useState(false);
@@ -34,7 +35,12 @@ const Experience = () => {
       />
       {isShown && (
         <SectionWrapper>
-          <PlusIcon onClick={handleAddExperience} />
+          <FontAwesomeIcon
+            icon={faCirclePlus}
+            className="icon flex-start"
+            onClick={handleAddExperience}
+            size="lg"
+          />
           {experienceList}
         </SectionWrapper>
       )}

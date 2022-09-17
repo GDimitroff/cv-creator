@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
 
 import SectionHeader from './SectionHeader';
 import SectionWrapper from '../UI/SectionWrapper';
 import InputFieldsWrapper from '../UI/InputFieldsWrapper';
-import { PlusIcon } from '../UI/Icons';
 import Skill from './Skill';
 
 const Skills = () => {
@@ -35,7 +36,12 @@ const Skills = () => {
       />
       {isShown && (
         <SectionWrapper>
-          <PlusIcon onClick={handleAddNewSkill} />
+          <FontAwesomeIcon
+            icon={faCirclePlus}
+            className="icon flex-start"
+            onClick={handleAddNewSkill}
+            size="lg"
+          />
           <InputFieldsWrapper>{skillsList}</InputFieldsWrapper>
         </SectionWrapper>
       )}

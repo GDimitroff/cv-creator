@@ -1,7 +1,8 @@
 import { useCVDispatch } from '../../contexts/CVContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleMinus } from '@fortawesome/free-solid-svg-icons';
 
 import Input from '../UI/Input';
-import { MinusIcon } from '../UI/Icons';
 import classes from './Skill.module.css';
 
 const Skill = ({ skill }) => {
@@ -48,7 +49,12 @@ const Skill = ({ skill }) => {
         <option value="9">9</option>
         <option value="10">10</option>
       </select>
-      <MinusIcon onClick={handleDeleteSkill} />
+      <FontAwesomeIcon
+        icon={faCircleMinus}
+        onClick={handleDeleteSkill}
+        size="lg"
+        className="icon"
+      />
     </div>
   );
 };
