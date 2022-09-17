@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCircleChevronDown,
-  faCircleChevronUp,
+  faAngleDoubleUp,
+  faAngleDoubleDown,
 } from '@fortawesome/free-solid-svg-icons';
 import classes from './SectionHeader.module.css';
 
@@ -10,18 +10,10 @@ const SectionHeader = ({ text, isShown, onToggleSection }) => {
     <div className={classes.header} onClick={onToggleSection}>
       <h3>{text}</h3>
       {!isShown && (
-        <FontAwesomeIcon
-          icon={faCircleChevronDown}
-          className="toggle"
-          size="lg"
-        />
+        <FontAwesomeIcon icon={faAngleDoubleUp} className="toggle" />
       )}
       {isShown && (
-        <FontAwesomeIcon
-          icon={faCircleChevronUp}
-          className="toggle"
-          size="lg"
-        />
+        <FontAwesomeIcon icon={faAngleDoubleDown} className="toggle" />
       )}
     </div>
   );

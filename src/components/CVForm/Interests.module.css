@@ -6,16 +6,18 @@
 }
 
 .panel {
+  width: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
 }
 
 .icon-wrapper {
   display: inline-block;
-  background-color: var(--secondary-gray);
+  background-color: var(--secondary-light);
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -23,10 +25,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
-.icon-wrapper.active {
+.icon-wrapper:hover,
+.icon-wrapper:active {
   border: 2px solid var(--primary-dark);
+}
+
+.icon-wrapper.selected {
+  border: 2px solid var(--primary-dark);
+  color: var(--secondary-light);
+  background-color: var(--primary-dark);
 }
 
 .icon {

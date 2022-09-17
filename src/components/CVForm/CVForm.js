@@ -10,11 +10,11 @@ const CVForm = () => {
   return (
     <section className={classes['cv-form']}>
       <GeneralInfo />
+      <Interests />
       <Skills />
       <Education />
       <Experience />
       <Awards />
-      <Interests />
     </section>
   );
 };
