@@ -1,14 +1,15 @@
 .dark {
   color: var(--primary-dark);
+  transition: 0.2s ease-in-out;
 }
 
 .light {
   color: var(--secondary-gray);
+  transition: 0.2s ease-in-out;
 }
 
 .link {
   cursor: pointer;
-  transition: 0.2s ease-in-out;
 }
 
 .link:hover,
