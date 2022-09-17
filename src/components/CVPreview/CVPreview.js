@@ -10,7 +10,7 @@ import Experience from './Experience';
 import classes from './CVPreview.module.css';
 
 const CVPreview = () => {
-  const { generalInfo, skills, education, experience } = useCV();
+  const { generalInfo, skills, education, experience, awards } = useCV();
 
   return (
     <section className={classes['cv-preview']}>
@@ -22,7 +22,7 @@ const CVPreview = () => {
           <hr />
           <Skills skills={skills} />
           <hr />
-          <Awards />
+          <Awards awards={awards} />
         </div>
         <div className={classes['vertical-line']}></div>
         <div className={classes['main-right']}>

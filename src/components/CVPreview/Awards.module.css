@@ -1,0 +1,22 @@
+.awards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.title {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+.organization {
+  line-height: 1.4;
+  color: var(--secondary-dark);
+  text-transform: uppercase;
+}
+
+.year {
+  font-size: 1.2rem;
+  color: var(--secondary-dark);
+}
