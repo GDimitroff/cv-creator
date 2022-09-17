@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { faStar as EmptyStar } from '@fortawesome/free-regular-svg-icons';
+import Icon from '../UI/Icon';
 import classes from './Skills.module.css';
 
 const Skills = ({ skills }) => {
@@ -17,9 +15,25 @@ const Skills = ({ skills }) => {
     const stars = [];
     for (let i = 1; i <= 10; i++) {
       if (i <= rating) {
-        stars.push(<FontAwesomeIcon icon={faStar} key={i} size="sm" />);
+        stars.push(
+          <Icon
+            iconName="star"
+            key={i}
+            size="sm"
+            className="dark"
+            link={false}
+          />
+        );
       } else {
-        stars.push(<FontAwesomeIcon icon={EmptyStar} key={i} size="sm" />);
+        stars.push(
+          <Icon
+            iconName="emptyStar"
+            key={i}
+            size="sm"
+            className="dark"
+            link={false}
+          />
+        );
       }
     }
 

@@ -60,21 +60,3 @@ hr {
 p {
   font-size: 1.4rem;
 }
-
-.icon {
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.icon.flex-start {
-  align-self: flex-start;
-}
-
-.icon:hover,
-.icon:active {
-  color: var(--hover-dark);
-}
-
-.toggle {
-  color: var(--secondary-gray);
-}

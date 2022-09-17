@@ -1,9 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleMinus } from '@fortawesome/free-solid-svg-icons';
 import { useCVDispatch } from '../../contexts/CVContext';
 
 import InputRow from '../UI/InputRow';
 import Input from '../UI/Input';
+import Icon from '../UI/Icon';
 
 const Award = ({ award }) => {
   const dispatch = useCVDispatch();
@@ -47,11 +46,12 @@ const Award = ({ award }) => {
         value={award.year}
         onChange={handleChangeAward}
       />
-      <FontAwesomeIcon
-        icon={faCircleMinus}
+      <Icon
+        iconName="minus"
         onClick={handleDeleteAward}
         size="lg"
-        className="icon"
+        className="dark"
+        link={true}
       />
     </InputRow>
   );

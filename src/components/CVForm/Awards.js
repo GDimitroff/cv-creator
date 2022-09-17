@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { useCV, useCVDispatch } from '../../contexts/CVContext';
 
 import SectionHeader from './SectionHeader';
 import SectionWrapper from '../UI/SectionWrapper';
 import InputFieldsWrapper from '../UI/InputFieldsWrapper';
+import Icon from '../UI/Icon';
 import Award from './Award';
 
 const Awards = () => {
@@ -36,11 +35,12 @@ const Awards = () => {
       />
       {isShown && (
         <SectionWrapper>
-          <FontAwesomeIcon
-            icon={faCirclePlus}
-            className="icon flex-start"
+          <Icon
+            iconName="plus"
             onClick={handleAddNewAward}
             size="lg"
+            className="dark"
+            link={true}
           />
           <InputFieldsWrapper>{awardsList}</InputFieldsWrapper>
         </SectionWrapper>

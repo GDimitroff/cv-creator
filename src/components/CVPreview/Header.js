@@ -1,9 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
-import {
-  faFacebookSquare,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
+import Icon from '../UI/Icon';
 import classes from './Header.module.css';
 
 const Header = ({ info }) => {
@@ -20,23 +15,23 @@ const Header = ({ info }) => {
         <ul>
           <li>
             {info.phoneNumber}
-            <FontAwesomeIcon icon={faPhone} />
+            <Icon iconName="phone" size="1x" className="dark" link={false} />
           </li>
           <li>
             {info.email}
-            <FontAwesomeIcon icon={faEnvelope} />
+            <Icon iconName="email" size="1x" className="dark" link={false} />
           </li>
           <li>
             {info.address}
-            <FontAwesomeIcon icon={faMap} />
+            <Icon iconName="map" size="1x" className="dark" link={false} />
           </li>
           <li>
             {info.linkedIn}
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+            <Icon iconName="linkedin" size="lg" className="dark" link={false} />
           </li>
           <li>
             {info.facebook}
-            <FontAwesomeIcon icon={faFacebookSquare} size="lg" />
+            <Icon iconName="facebook" size="lg" className="dark" link={false} />
           </li>
         </ul>
       </div>
