@@ -17,10 +17,14 @@ const Interests = () => {
     );
   });
 
+  console.log(interests);
+
   return (
     <div>
       <h2>Interests</h2>
-      <div className={classes.interests}>{interestsList}</div>
+      {interests.length > 0 && (
+        <div className={classes.interests}>{interestsList}</div>
+      )}
     </div>
   );
 };
