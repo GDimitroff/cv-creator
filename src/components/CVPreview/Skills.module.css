@@ -16,3 +16,13 @@
   width: 16px;
   color: var(--primary-dark);
 }
+
+@media (max-width: 1600px) {
+  .skills {
+    min-height: 140px;
+  }
+
+  .rating {
+    flex-direction: column;
+  }
+}

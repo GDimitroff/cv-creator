@@ -2,6 +2,7 @@
   flex-basis: 35%;
   background-color: var(--primary-light);
   padding: 3rem;
+  flex-shrink: 1;
 }
 
 .cv-form > div:not(:last-child) {

@@ -9,7 +9,7 @@ const Header = () => {
         <img src={logo} alt="CV Creator" />
       </div>
       <h1 className={classes.title}>CV Creator</h1>
-      <Button text="Flip icon" />
+      <Button text="Generate PDF" />
     </header>
   );
 };

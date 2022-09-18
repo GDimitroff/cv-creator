@@ -1,4 +1,5 @@
 .cv-preview {
+  flex-grow: 1;
   flex-basis: 65%;
   align-self: flex-start;
   background-color: var(--secondary-light);

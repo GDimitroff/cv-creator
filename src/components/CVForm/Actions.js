@@ -18,7 +18,6 @@ const Actions = () => {
         text="Clear"
         className="action"
       />
-      <Button text="Generate PDF" className="danger" />
     </div>
   );
 };
