@@ -74,7 +74,11 @@ const EducationForm = ({ education }) => {
           onChange={(e) => handleOnChange(e)}
         />
       </InputRow>
-      <Button className="alt" onClick={handleDeleteEducation} text="Delete" />
+      <Button
+        className="danger"
+        onClick={handleDeleteEducation}
+        text="Delete"
+      />
     </InputFieldsWrapper>
   );
 };

@@ -24,8 +24,3 @@ img {
   font-weight: 700;
   margin-right: auto;
 }
-
-.actions {
-  display: flex;
-  gap: 8px;
-}

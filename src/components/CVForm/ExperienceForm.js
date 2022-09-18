@@ -73,7 +73,11 @@ const ExperienceForm = ({ experience }) => {
           onChange={(e) => handleOnChange(e)}
         />
       </InputRow>
-      <Button className="alt" onClick={handleDeleteExperience} text="Delete" />
+      <Button
+        className="danger"
+        onClick={handleDeleteExperience}
+        text="Delete"
+      />
     </InputFieldsWrapper>
   );
 };
