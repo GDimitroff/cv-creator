@@ -1,16 +1,26 @@
-import { useState } from 'react';
+import { useCV, useCVDispatch } from '../../contexts/CVContext';
 
 import Icon from '../UI/Icon';
 import classes from './Interest.module.css';
 
 const Interest = ({ title, text }) => {
-  const [selected, isSelected] = useState(false);
+  const { interests } = useCV();
+  const dispatch = useCVDispatch();
 
+  const selected = interests.includes(title);
   const classList = `${classes['wrapper']} ${selected ? classes.selected : ''}`;
   const iconColor = selected ? 'light' : 'dark';
 
   const handleToggle = () => {
-    isSelected((prevSelected) => !prevSelected);
+    selected
+      ? dispatch({
+          type: 'DELETE_INTEREST',
+          title,
+        })
+      : dispatch({
+          type: 'ADD_INTEREST',
+          title,
+        });
   };
 
   return (

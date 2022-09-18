@@ -105,6 +105,7 @@ const exampleCV = {
       year: '2021',
     },
   ],
+  interests: ['music', 'code', 'art', 'love'],
 };
 
 export default exampleCV;

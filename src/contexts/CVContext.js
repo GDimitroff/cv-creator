@@ -182,6 +182,14 @@ function cvReducer(cv, action) {
 
       return { ...newCV };
     }
+    case 'ADD_INTEREST': {
+      return { ...cv, interests: [...cv.interests, action.title] };
+    }
+    case 'DELETE_INTEREST': {
+      const updatedInterests = cv.interests.filter((i) => i !== action.title);
+
+      return { ...cv, interests: updatedInterests };
+    }
     case 'LOAD_EXAMPLE_CV': {
       return { ...exampleCV };
     }

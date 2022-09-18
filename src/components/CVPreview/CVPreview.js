@@ -6,6 +6,7 @@ import Skills from './Skills';
 import Awards from './Awards';
 import GeneralInfo from './GeneralInfo';
 import Experience from './Experience';
+import Interests from './Interests';
 
 import classes from './CVPreview.module.css';
 
@@ -29,6 +30,8 @@ const CVPreview = () => {
           <GeneralInfo generalInfo={generalInfo} />
           <hr />
           <Experience experience={experience} />
+          <hr />
+          <Interests />
         </div>
       </main>
     </section>

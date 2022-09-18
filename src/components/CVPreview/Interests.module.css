@@ -1,0 +1,20 @@
+.interests {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.interest {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-gray);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 1.2rem;
+}

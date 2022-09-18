@@ -49,6 +49,7 @@ const emptyCV = {
       year: '',
     },
   ],
+  interests: [],
 };
 
 export default emptyCV;
