@@ -122,7 +122,7 @@ function cvReducer(cv, action) {
           {
             id: uuidv4(),
             title: '',
-            rating: '',
+            rating: '1',
           },
           ...cv.skills,
         ],

@@ -10,6 +10,10 @@
   border-radius: 6px;
 }
 
+.textarea::placeholder {
+  color: #b0bec5;
+}
+
 .textarea:focus {
   background-color: var(--secondary-gray);
   border-left: 3px solid var(--primary-dark);

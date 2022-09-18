@@ -16,7 +16,7 @@ const emptyCV = {
     {
       id: uuidv4(),
       title: '',
-      rating: '',
+      rating: '1',
     },
   ],
   education: [
