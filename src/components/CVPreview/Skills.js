@@ -6,7 +6,7 @@ const Skills = ({ skills }) => {
     return (
       <li className={classes.rating} key={skill.id}>
         <p>{skill.title}</p>
-        <div>{getStars(skill.rating)}</div>
+        <div>{skill.title && getStars(skill.rating)}</div>
       </li>
     );
   });

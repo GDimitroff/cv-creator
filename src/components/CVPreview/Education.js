@@ -4,15 +4,21 @@ const Education = ({ education }) => {
   const educationList = education.map((edu) => {
     return (
       <div key={edu.id}>
-        <h3>
-          {edu.degree} of {edu.subject}
-        </h3>
-        <p className={classes.university}>
-          {edu.universityName}, {edu.city}
-        </p>
-        <p className={classes['from-to']}>
-          {edu.from} - {edu.to}
-        </p>
+        {edu.degree && (
+          <h3>
+            {edu.degree} of {edu.subject}
+          </h3>
+        )}
+        {edu.universityName && (
+          <p className={classes.university}>
+            {edu.universityName}, {edu.city}
+          </p>
+        )}
+        {edu.from && (
+          <p className={classes['from-to']}>
+            {edu.from} - {edu.to}
+          </p>
+        )}
       </div>
     );
   });

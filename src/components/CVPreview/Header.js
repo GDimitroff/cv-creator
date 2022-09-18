@@ -13,26 +13,46 @@ const Header = ({ info }) => {
       </div>
       <div className={classes.links}>
         <ul>
-          <li>
-            {info.phoneNumber}
-            <Icon iconName="phone" size="1x" className="dark" link={false} />
-          </li>
-          <li>
-            {info.email}
-            <Icon iconName="email" size="1x" className="dark" link={false} />
-          </li>
-          <li>
-            {info.address}
-            <Icon iconName="map" size="1x" className="dark" link={false} />
-          </li>
-          <li>
-            {info.linkedIn}
-            <Icon iconName="linkedin" size="lg" className="dark" link={false} />
-          </li>
-          <li>
-            {info.facebook}
-            <Icon iconName="facebook" size="lg" className="dark" link={false} />
-          </li>
+          {info.phoneNumber && (
+            <li>
+              {info.phoneNumber}
+              <Icon iconName="phone" size="1x" className="dark" link={false} />
+            </li>
+          )}
+          {info.email && (
+            <li>
+              {info.email}
+              <Icon iconName="email" size="1x" className="dark" link={false} />
+            </li>
+          )}
+          {info.address && (
+            <li>
+              {info.address}
+              <Icon iconName="map" size="1x" className="dark" link={false} />
+            </li>
+          )}
+          {info.linkedIn && (
+            <li>
+              {info.linkedIn}
+              <Icon
+                iconName="linkedin"
+                size="lg"
+                className="dark"
+                link={false}
+              />
+            </li>
+          )}
+          {info.facebook && (
+            <li>
+              {info.facebook}
+              <Icon
+                iconName="facebook"
+                size="lg"
+                className="dark"
+                link={false}
+              />
+            </li>
+          )}
         </ul>
       </div>
     </header>
