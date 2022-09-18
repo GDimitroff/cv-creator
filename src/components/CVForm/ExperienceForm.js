@@ -34,6 +34,7 @@ const ExperienceForm = ({ experience }) => {
         value={experience.position}
         onChange={(e) => handleOnChange(e)}
         maxLength="35"
+        label="Position"
       />
       <InputRow>
         <Input
@@ -43,6 +44,7 @@ const ExperienceForm = ({ experience }) => {
           value={experience.company}
           onChange={(e) => handleOnChange(e)}
           maxLength="20"
+          label="Company"
         />
         <Input
           type="text"
@@ -51,6 +53,7 @@ const ExperienceForm = ({ experience }) => {
           value={experience.city}
           onChange={(e) => handleOnChange(e)}
           maxLength="20"
+          label="City"
         />
       </InputRow>
       <TextArea
@@ -60,6 +63,7 @@ const ExperienceForm = ({ experience }) => {
         value={experience.description}
         onChange={(e) => handleOnChange(e)}
         maxLength="350"
+        label="Description"
       />
       <InputRow>
         <Input
@@ -69,6 +73,7 @@ const ExperienceForm = ({ experience }) => {
           value={experience.from}
           onChange={(e) => handleOnChange(e)}
           maxLength="4"
+          label="From"
         />
         <Input
           type="tel"
@@ -77,6 +82,7 @@ const ExperienceForm = ({ experience }) => {
           value={experience.to}
           onChange={(e) => handleOnChange(e)}
           maxLength="4"
+          label="To"
         />
       </InputRow>
       <Button

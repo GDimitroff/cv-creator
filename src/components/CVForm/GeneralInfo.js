@@ -45,6 +45,7 @@ const GeneralInfo = () => {
                 value={generalInfo.firstName}
                 onChange={(e) => handleOnChange(e)}
                 maxLength="15"
+                label="First Name"
               />
               <Input
                 type="text"
@@ -53,6 +54,7 @@ const GeneralInfo = () => {
                 value={generalInfo.lastName}
                 onChange={(e) => handleOnChange(e)}
                 maxLength="15"
+                label="Last Name"
               />
             </InputRow>
             <Input
@@ -62,6 +64,7 @@ const GeneralInfo = () => {
               value={generalInfo.title}
               onChange={(e) => handleOnChange(e)}
               maxLength="50"
+              label="Title"
             />
             <InputRow>
               <Input
@@ -71,6 +74,7 @@ const GeneralInfo = () => {
                 value={generalInfo.phoneNumber}
                 onChange={(e) => handleOnChange(e)}
                 maxLength="20"
+                label="Phone"
               />
               <Input
                 type="email"
@@ -79,6 +83,7 @@ const GeneralInfo = () => {
                 value={generalInfo.email}
                 onChange={(e) => handleOnChange(e)}
                 maxLength="25"
+                label="Email"
               />
             </InputRow>
             <Input
@@ -88,6 +93,7 @@ const GeneralInfo = () => {
               value={generalInfo.address}
               onChange={(e) => handleOnChange(e)}
               maxLength="40"
+              label="Address"
             />
             <InputRow>
               <Input
@@ -97,6 +103,7 @@ const GeneralInfo = () => {
                 value={generalInfo.linkedIn}
                 onChange={(e) => handleOnChange(e)}
                 maxLength="40"
+                label="LinkedIn"
               />
               <Input
                 type="text"
@@ -105,6 +112,7 @@ const GeneralInfo = () => {
                 value={generalInfo.facebook}
                 onChange={(e) => handleOnChange(e)}
                 maxLength="40"
+                label="Facebook"
               />
             </InputRow>
             <TextArea

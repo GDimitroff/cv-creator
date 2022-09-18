@@ -34,6 +34,7 @@ const EducationForm = ({ education }) => {
           value={education.universityName}
           onChange={(e) => handleOnChange(e)}
           maxLength="35"
+          label="University"
         />
         <Input
           type="text"
@@ -42,6 +43,7 @@ const EducationForm = ({ education }) => {
           value={education.city}
           onChange={(e) => handleOnChange(e)}
           maxLength="20"
+          label="City"
         />
       </InputRow>
       <InputRow>
@@ -52,6 +54,7 @@ const EducationForm = ({ education }) => {
           value={education.degree}
           onChange={(e) => handleOnChange(e)}
           maxLength="15"
+          label="Degree"
         />
         <Input
           type="text"
@@ -60,6 +63,7 @@ const EducationForm = ({ education }) => {
           value={education.subject}
           onChange={(e) => handleOnChange(e)}
           maxLength="20"
+          label="Subject"
         />
       </InputRow>
       <InputRow>
@@ -70,6 +74,7 @@ const EducationForm = ({ education }) => {
           value={education.from}
           onChange={(e) => handleOnChange(e)}
           maxLength="4"
+          label="From"
         />
         <Input
           type="tel"
@@ -78,6 +83,7 @@ const EducationForm = ({ education }) => {
           value={education.to}
           onChange={(e) => handleOnChange(e)}
           maxLength="4"
+          label="To"
         />
       </InputRow>
       <Button

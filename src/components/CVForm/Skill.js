@@ -32,6 +32,7 @@ const Skill = ({ skill }) => {
         placeholder="Skill"
         value={skill.title}
         onChange={handleChangeSkill}
+        label="Skill"
       />
       <select
         name="skill-rating"

@@ -17,8 +17,6 @@ const Interests = () => {
     );
   });
 
-  console.log(interests);
-
   return (
     <div>
       <h2>Interests</h2>

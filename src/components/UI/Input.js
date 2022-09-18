@@ -1,16 +1,32 @@
 import classes from './Input.module.css';
 
-const Input = ({ type, name, placeholder, value, onChange, maxLength }) => {
+const Input = ({
+  type,
+  name,
+  placeholder,
+  value,
+  onChange,
+  maxLength,
+  label,
+}) => {
   return (
-    <input
-      className={classes.input}
-      type={type}
-      name={name}
-      placeholder={placeholder}
-      value={value}
-      onChange={onChange}
-      maxLength={maxLength}
-    />
+    <div className={classes.wrapper}>
+      <div className={classes.input}>
+        <input
+          className={classes['input-field']}
+          id={name}
+          type={type}
+          name={name}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          maxLength={maxLength}
+        />
+        <label htmlFor={name} className={classes['input-label']}>
+          {label}
+        </label>
+      </div>
+    </div>
   );
 };
 
