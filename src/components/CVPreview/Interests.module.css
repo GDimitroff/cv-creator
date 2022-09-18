@@ -5,16 +5,21 @@
 }
 
 .interest {
-  width: 46px;
-  height: 46px;
+  width: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
   background-color: var(--secondary-gray);
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 50%;
 }
 
 .title {
   font-size: 1.2rem;
+  color: var(--secondary-dark);
 }

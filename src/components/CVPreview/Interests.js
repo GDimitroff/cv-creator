@@ -9,7 +9,9 @@ const Interests = () => {
   const interestsList = interests.map((i) => {
     return (
       <div className={classes.interest} key={i}>
-        <Icon iconName={i} className="dark" link={false} />
+        <div className={classes.icon}>
+          <Icon iconName={i} className="dark" link={false} />
+        </div>
         <p className={classes.title}>{i}</p>
       </div>
     );
