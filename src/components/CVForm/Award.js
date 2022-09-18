@@ -32,6 +32,7 @@ const Award = ({ award }) => {
         value={award.title}
         onChange={handleChangeAward}
         maxLength="25"
+        label="Award"
       />
       <Input
         type="text"
@@ -40,6 +41,7 @@ const Award = ({ award }) => {
         value={award.organization}
         onChange={handleChangeAward}
         maxLength="25"
+        label="Organization"
       />
       <Input
         type="tel"
@@ -48,6 +50,7 @@ const Award = ({ award }) => {
         value={award.year}
         onChange={handleChangeAward}
         maxLength="4"
+        label="Year"
       />
       <Icon
         iconName="minus"
