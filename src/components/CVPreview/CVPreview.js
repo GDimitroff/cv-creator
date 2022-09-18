@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import { useCV } from '../../contexts/CVContext';
 
 import Header from './Header';
@@ -10,11 +11,11 @@ import Interests from './Interests';
 
 import classes from './CVPreview.module.css';
 
-const CVPreview = () => {
+const CVPreview = forwardRef((props, ref) => {
   const { generalInfo, skills, education, experience, awards } = useCV();
 
   return (
-    <section className={classes['cv-preview']}>
+    <section className={classes['cv-preview']} ref={ref}>
       <Header info={generalInfo} />
       <hr />
       <main className={classes.main}>
@@ -36,6 +37,6 @@ const CVPreview = () => {
       </main>
     </section>
   );
-};
+});
 
 export default CVPreview;

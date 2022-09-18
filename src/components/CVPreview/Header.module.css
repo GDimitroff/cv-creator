@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  min-height: 160px;
+  min-height: 140px;
 }
 
 .names {
@@ -43,7 +43,7 @@
 }
 
 .links li:not(:last-child) {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .icon {

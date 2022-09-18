@@ -1,8 +1,8 @@
 .education {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  min-height: 300px;
+  gap: 18px;
+  min-height: 190px;
 }
 
 .education h3 {
