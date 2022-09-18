@@ -66,7 +66,7 @@ const exampleCV = {
       company: 'Facebook Inc.',
       city: 'Menlo Park',
       from: '2015',
-      to: 'Present',
+      to: '2022',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolores debitis, doloribus porro delectus velit.',
     },

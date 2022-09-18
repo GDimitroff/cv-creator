@@ -1,6 +1,6 @@
 import classes from './Input.module.css';
 
-const Input = ({ type, name, placeholder, value, onChange }) => {
+const Input = ({ type, name, placeholder, value, onChange, maxLength }) => {
   return (
     <input
       className={classes.input}
@@ -9,6 +9,7 @@ const Input = ({ type, name, placeholder, value, onChange }) => {
       placeholder={placeholder}
       value={value}
       onChange={onChange}
+      maxLength={maxLength}
     />
   );
 };

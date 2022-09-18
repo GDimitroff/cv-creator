@@ -1,6 +1,6 @@
 import classes from './TextArea.module.css';
 
-const TextArea = ({ name, placeholder, value, onChange }) => {
+const TextArea = ({ name, placeholder, value, onChange, maxLength }) => {
   return (
     <textarea
       className={classes.textarea}
@@ -8,6 +8,7 @@ const TextArea = ({ name, placeholder, value, onChange }) => {
       placeholder={placeholder}
       value={value}
       onChange={onChange}
+      maxLength={maxLength}
     />
   );
 };
