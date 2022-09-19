@@ -24,3 +24,13 @@
   font-size: 1.2rem;
   color: var(--secondary-dark);
 }
+
+@media (max-width: 800px) {
+  .interests {
+    gap: 12px;
+  }
+
+  .interest {
+    width: 44px;
+  }
+}

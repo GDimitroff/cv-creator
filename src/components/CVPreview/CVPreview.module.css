@@ -30,3 +30,17 @@
     width: 100%;
   }
 }
+
+@media (max-width: 800px) {
+  .cv-preview {
+    padding: 2rem;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    margin: 2rem 0;
+  }
+}
