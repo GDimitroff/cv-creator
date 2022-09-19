@@ -1,4 +1,4 @@
-## [CV Creator](https://cv-creator-3629d.web.app/)
+## [CV Creator](https://cv-creator-f352b.web.app/)
 
 A React app which allows users to create their own resume using a ready template and download it in a PDF format. This toy project is to enforce my learnings on React fundamentals (components and state management).
 
