@@ -25,13 +25,13 @@
   border: 1px solid var(--secondary-gray);
 }
 
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .cv-preview {
     width: 100%;
   }
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .cv-preview {
     padding: 2rem;
   }

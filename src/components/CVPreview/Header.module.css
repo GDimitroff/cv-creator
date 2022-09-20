@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  min-height: 140px;
+  min-height: 120px;
 }
 
 .names {
@@ -52,7 +52,7 @@
   fill: var(--primary-dark);
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .header {
     flex-direction: column;
   }

@@ -17,11 +17,7 @@
   color: var(--primary-dark);
 }
 
-@media (max-width: 1600px) {
-  .skills {
-    min-height: 140px;
-  }
-
+@media only screen and (max-width: 1600px) {
   .rating {
     flex-direction: column;
   }

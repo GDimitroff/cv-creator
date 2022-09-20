@@ -9,7 +9,7 @@
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .cv-form {
     width: 100%;
     margin-bottom: 3rem;

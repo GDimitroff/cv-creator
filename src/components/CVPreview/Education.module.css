@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  min-height: 190px;
+  min-height: 140px;
 }
 
 .education h3 {
